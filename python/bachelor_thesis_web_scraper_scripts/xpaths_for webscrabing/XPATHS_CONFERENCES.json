@@ -1,0 +1,2432 @@
+[{
+  "_id": "https://us.pycon.org/2020/online/",
+  "sites": "//*[@class='container']//h1[not(contains(@id,'charlas') or contains(@id, 'posters'))]/following-sibling::ul[1]/li/a[1]",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2020",
+  "location": "USA"
+},{
+  "_id": "https://basta.net/programm/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2021"
+},{
+  "_id": "https://devternity.com",
+  "sites": "//*[@class='evt row odd']//a/strong",
+  "title": "normalize-space(./text())",
+  "event": "DevTernity",
+  "year": "2021"
+},{
+  "_id": "https://2019.geekout.ee/schedule/",
+  "sites": "//*[@class='edgtf-elements-holder edgtf-responsive-mode-768 edgtf-one-column-alignment-center']//span//a",
+  "title": "normalize-space(./text())",
+  "event": "Geekout",
+  "year": "2019"
+},{
+  "_id": "https://swanseacon.co.uk/schedule/",
+  "sites": "//*[@class='slot-title'][not(contains(.,'Break') or contains(., 'Lunch') or contains(., 'Registration') or contains(., 'Welcome') or contains(., 'Close'))]",
+  "title": "normalize-space(./text())",
+  "event": "Swanseacon",
+  "year": "2019"
+},{
+  "_id": "https://2020.rigadevdays.lv/schedule/",
+  "sites": "//*[@class='session-tags']/span/parent::p/preceding-sibling::h3",
+  "title": "normalize-space(./text())",
+  "event": "DevDays",
+  "year": "2020"
+},{
+  "_id": "https://jaxlondon.com/program/",
+  "sites": "//*[@class=\"gdlr-session-item-title\"]//a",
+  "title": "./text()",
+  "event": "JAX London",
+  "year": "2020"
+},{
+  "_id": "https://2021.aginext.io/schedule-aginext-conference/",
+  "sites": "//td//b[1]/a[not(contains(@href, 'Speaker'))]",
+  "title": "./text()",
+  "event": "Aginext.io",
+  "year": "2021",
+  "location": "London"
+},{
+  "_id": "https://www.software-quality-days.com/en/conference/conference-program/konferenztag-1/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "info": "2016-20",
+  "year": "2021"
+},{
+  "_id": "https://www.software-quality-days.com/en/conference/conference-program/konferenztag-2/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2021"
+},{
+  "_id": "https://www.oop-konferenz.de/oop2021/programm/konferenzprogramm.html",
+  "sites": "//*[@class=\"title accUpper\"][not(contains(., 'Coffee Break') or contains(., 'Lunch Break') or contains(., 'Break') or contains(., 'Short Break'))]",
+  "title": ".//text()",
+  "event": "OOP",
+  "year": "2021"
+},{
+  "_id": "https://www.code-days.de/codedays-2021/programm/programm.html",
+  "sites": "//*[@class=\"title accUpper\"][not(contains(., 'Coffee Break') or contains(., 'Lunch Break'))]",
+  "title": "./text()",
+  "event": "Code Days",
+  "year": "2021"
+},{
+  "_id": "https://devnexus.com/schedule",
+  "sites": "//*[@class=\"row schedule-row\"]/div/a[not(contains(., 'CLOSING'))]",
+  "title": "./text()",
+  "event": "DevNexus",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/ai-in-finance-summit-2021/schedule",
+  "sites": "//*[@class='schedule-item  applications']//p",
+  "title": "normalize-space(./text())",
+  "event": "re-work AI in Finance Summit",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/ai-in-insurance-summit-2021/schedule",
+  "sites": "//*[@class=\"schedule-item  applications\"]//p",
+  "title": "normalize-space(./text())",
+  "event": "re-work AI in Insurance Summit",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/ai-in-retail-summit-2021/schedule",
+  "sites": "//*[@class=\"schedule-item  applications\"]//p",
+  "title": "normalize-space(./text())",
+  "event": "re-work AI in Retail Summit",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/women-in-fintech-2021/schedule",
+  "sites": "//div[@class=\"schedule-item  impact\"]//p[1]",
+  "title": "normalize-space(./text())",
+  "event": "re-work Women in Fintech",
+  "year": "2021"
+},{
+  "_id": "https://mlconference.ai/munich/program-munich/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2020"
+},{
+  "_id": "https://www.germantestingday.info/german-testing-day-2021/programm/konferenzprogramm.html",
+  "sites": "//*[@class=\"title accUpper\"][not(contains(., 'Eröffnung') or contains(., 'Abschluss') or contains(.,'Pause'))]",
+  "title": "normalize-space(./text())",
+  "event": "German Testing Day",
+  "year": "2021"
+},{
+  "_id": "https://swisstestingday.ch/programme/",
+  "sites": "//div[@class='session-title']",
+  "title": "./text()",
+  "event": "Swiss Testing Day",
+  "year": "2020"
+},{
+  "_id": "https://ep2020.europython.eu/events/sessions/",
+  "sites": "//div[@id='content']//li/a[1][not(contains(., 'Help us build'))]",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2020"
+},{
+  "_id": "https://ep2017.europython.eu/en/events/sessions/",
+  "sites": "//*[preceding-sibling::h3[. = 'Keynotes'] and following-sibling::h3[. = 'Help desks']]//li/a[1]",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2017"
+},{
+  "_id": "https://ep2016.europython.eu/en/events/sessions/",
+  "sites": "//*[preceding-sibling::h3[. = 'Keynotes'] and following-sibling::h3[. = 'Panels']]//li/a[1]",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2016"
+},{
+  "_id": "https://ep2015.europython.eu/en/events/sessions/",
+  "sites": "//*[preceding-sibling::h3[. = 'Keynotes'] and following-sibling::h3[. = 'Help desks']]//li/a[1]",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2015"
+},{
+  "_id": "https://ep2019.europython.eu/events/sessions/",
+  "sites": "//*[preceding-sibling::h3[. = 'Keynotes'] and following-sibling::h3[. = 'Help desks']]//li/a[1]",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2019"
+},{
+  "_id": "https://ep2018.europython.eu/p3/schedule/ep2018/list/",
+  "sites": "//*[@class='event']/div[@class='name']/a",
+  "title": "./text()",
+  "event": "EuroPython",
+  "year": "2018"
+},{
+  "_id": "https://pycon-archive.python.org/2017/schedule/talks/list/",
+  "sites": "//*[@class='box-content']//h2/a",
+  "title": "./text()",
+  "event": "PyCon",
+  "location": "USA",
+  "year": "2017"
+},{
+  "_id": "https://pycon-archive.python.org/2017/schedule/tutorials/list/",
+  "sites": "//*[@class='box-content']//h2/a",
+  "title": "./text()",
+  "event": "PyCon",
+  "location": "USA",
+  "year": "2017"
+},{
+  "_id": "https://pycon-archive.python.org/2017/schedule/sponsor-tutorials/list/",
+  "sites": "//*[@class='box-content']//h2/a",
+  "title": "./text()",
+  "event": "PyCon",
+  "location": "USA",
+  "year": "2017"
+},{
+  "_id": "https://pycon-archive.python.org/2019/schedule/",
+  "sites": "//span[@class='title']/a",
+  "title": "./text()",
+  "event": "PyCon",
+  "location": "USA",
+  "year": "2019"
+},{
+  "_id": "https://us.pycon.org/2018/schedule/",
+  "sites": "//span[@class='title']/a",
+  "title": "./text()",
+  "event": "PyCon",
+  "location": "USA",
+  "year": "2018"
+},{
+  "_id": "https://2018.geekout.ee/schedule/",
+  "sites": "//*[@class='edgtf-elements-holder edgtf-responsive-mode-768 edgtf-one-column-alignment-center']//span",
+  "title": "./text()",
+  "event": "Geekout",
+  "year": "2018"
+},{
+  "_id": "https://2017.geekout.ee/schedule/",
+  "sites": "//h3/a[not(contains(., 'Coffee') or contains(., 'Lunch') or contains(., 'Party') or contains(.,'Conference'))]",
+  "title": "./text()",
+  "event": "Geekout",
+  "year": "2017"
+},{
+  "_id": "https://2016.geekout.ee/schedule/",
+  "sites": "//h3/a[not(contains(., 'Coffee') or contains(., 'Lunch') or contains(., 'Party') or contains(.,'Conference') or contains(., 'coffee') or contains(., 'Opening') or contains(., 'Seaplane'))]",
+  "title": "./text()",
+  "event": "Geekout",
+  "year": "2016"
+},{
+  "_id": "https://2019.rigadevdays.lv/track/",
+  "sites": "//h4[@class = 'entry-title mt-0 card-title ']",
+  "title": "./text()",
+  "event": "DevDays",
+  "year": "2019"
+},{
+  "_id": "https://qconlondon.com/schedule/london2019/tabular",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "normalize-space(./text())",
+  "event": "QCon",
+  "year": "2019",
+  "location": "London"
+},{
+  "_id": "https://qconlondon.com/london2018/schedule/london2018/tabular.html",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "normalize-space(./text())",
+  "event": "QCon",
+  "year": "2018",
+  "location": "London"
+},{
+  "_id": "https://qconlondon.com/london2018/london-2017/london-2017/schedule/tabular.html",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "normalize-space(./text())",
+  "event": "QCon",
+  "year": "2017",
+  "location": "London"
+},{
+  "_id": "https://qconlondon.com/schedule/london2020/tabular",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "normalize-space(./text())",
+  "event": "QCon",
+  "year": "2017",
+  "location": "London"
+},{
+  "_id": "https://qconlondon.com/london2018/london-2016/london-2016/schedule/tabular.html",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "./text()",
+  "event": "QCon",
+  "year": "2016",
+  "location": "London"
+},{
+  "_id": "https://qconlondon.com/london-2015/schedule.html",
+  "sites": "//tbody//*[contains(@class, 'keynote-title') or contains(@class, 'track-title') or contains(@class, 'presentation-title') or contains(@class, 'tutorial-title')]",
+  "title": "./text()",
+  "event": "QCon",
+  "year": "2015",
+  "location": "London"
+},{
+  "_id": "https://jaxlondon.com/archive-2019/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "./text()",
+  "event": "JAX London",
+  "year": "2019"
+},{
+  "_id": "https://jaxlondon.com/archive-2018/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "./text()",
+  "event": "JAX London",
+  "year": "2018"
+},{
+  "_id": "https://jaxlondon.com/archive-2017/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "./text()",
+  "event": "JAX London",
+  "year": "2017"
+},{
+  "_id": "https://jaxlondon.com/archive-2016/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "./text()",
+  "event": "JAX London",
+  "year": "2016"
+},{
+  "_id": "https://2020.aginext.io/schedule-aginext-conference/",
+  "sites": "//td//b[1]/a[not(contains(@href, 'Speaker'))]",
+  "title": "./text()",
+  "event": "Aginext.io",
+  "year": "2020"
+},{
+  "_id": "https://2019.aginext.io/schedule/",
+  "sites": "//td//b[1]/a[not(contains(@href, 'Speaker'))]",
+  "title": "./text()",
+  "event": "Aginext.io",
+  "year": "2019"
+},{
+  "_id": "https://2017.aginext.io",
+  "sites": "//td//b[1]/a[not(contains(@href, 'Speaker'))]",
+  "title": "./text()",
+  "event": "Aginext.io",
+  "year": "2017"
+},{
+  "_id": "https://2018.aginext.io",
+  "sites": "//td//b[1]/a[not(contains(@href, 'Speaker'))]",
+  "title": "./text()",
+  "event": "Aginext.io",
+  "year": "2018"
+},{
+  "_id": "https://www.software-quality-days.com/en/conference/conference-program/workshop-tag-1-1/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2021"
+},{
+  "_id": "https://2020.software-quality-days.com/en/conference/conference-program/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2020"
+},{
+  "_id": "https://2020.software-quality-days.com/en/conference/conference-program/konferenz-tag-1/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2020"
+},{
+  "_id": "https://2020.software-quality-days.com/en/conference/conference-program/konferenz-tag-2/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2020"
+},{
+  "_id": "https://2020.software-quality-days.com/en/conference/conference-program/workshop-tag-2/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2020"
+},{
+  "_id": "https://2019.software-quality-days.com/en/conference/conference-program/",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2019"
+},{
+  "_id": "https://2019.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=58&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=b92780cae66c44ed7cb15408dc48fee9",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2019"
+},{
+  "_id": "https://2019.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=56&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=19dc8f81b322dfb5d184476a0fd4acca",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2019"
+},{
+  "_id": "https://2019.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=54&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=d687008de811606194a0209116cdc271",
+  "sites": "//*[@class=\"comot-flex-row\"]//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2019"
+},{
+  "_id": "https://2017.software-quality-days.com/en/conference/conference-program/",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2017"
+},{
+  "_id": "https://2017.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=39&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=2b6b0e14fb2a01157b5790a5f4ca1bdf",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2017"
+},{
+  "_id": "https://2017.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=40&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=54f554dce73d25536983ae7b98148aa5",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2017"
+},{
+  "_id": "https://2017.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=41&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=0b6fb17d178a5c4c673087c089b40f77",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2017"
+},{
+  "_id": "https://2016.software-quality-days.com/en/conference/conference-program/",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2016"
+},{
+  "_id": "https://2016.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=31&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=6852d3c58cd39e8daa24556a8576a637",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2016"
+},{
+  "_id": "https://2016.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=32&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=bed79da04a4dec7e469e9fe03b85bf3f",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2016"
+},{
+  "_id": "https://2016.software-quality-days.com/en/conference/conference-program/?tx_comot_pi2%5Bday%5D=33&tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&cHash=842550c2aa5ce5d11f9da60cadd1295a",
+  "sites": "//*[@class='comot-flex-row']//div[not(contains(@class, 'lecturer'))]/a[not(contains(text(), 'Open Discussion'))]",
+  "title": "./text()",
+  "event": "Software Quality Days",
+  "year": "2016"
+},{
+  "_id": "https://basta.net/archiv/basta-spring-2017/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2017"
+},{
+  "_id": "https://basta.net/archiv/archiv-basta-2017/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2017"
+},{
+  "_id": "https://basta.net/archiv-basta-spring-2018/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2018"
+},{
+  "_id": "https://basta.net/archiv-basta-2018/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2018"
+},{
+  "_id": "https://basta.net/archiv/archiv-basta-spring-2019/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2019"
+},{
+  "_id": "https://basta.net/archiv/basta-2019-archiv/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2019"
+},{
+  "_id": "https://basta.net/archiv/archiv-basta-spring-2020/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2020"
+},{
+  "_id": "https://basta.net/archiv/archiv-basta-2020/",
+  "sites": "//*[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "Basta!",
+  "year": "2020"
+},{
+  "_id": "https://devternity.com/rix/2019/",
+  "sites": "//*[@class='evt row odd']//a/strong",
+  "title": "normalize-space(./text())",
+  "event": "DevTernity",
+  "year": "2019"
+},{
+  "_id": "https://devternity.com/rix/2018/",
+  "sites": "//*[@class='evt row odd']//a/strong",
+  "title": "normalize-space(./text())",
+  "event": "DevTernity",
+  "year": "2018"
+},{
+  "_id": "https://devternity.com/rix/2017/",
+  "sites": "//*[@class='evt row odd']//a/strong",
+  "title": "normalize-space(./text())",
+  "event": "DevTernity",
+  "year": "2017"
+},{
+  "_id": "http://devternity.com/rix/2016/",
+  "sites": "//tr//td//strong",
+  "title": "normalize-space(./text())",
+  "event": "DevTernity",
+  "year": "2016"
+},{
+  "_id": "https://2015.geekout.ee/schedule/",
+  "sites": "///h3/a[not(contains(., 'Coffee') or contains(., 'Lunch') or contains(., 'Party') or contains(.,'Conference')  or contains(., 'Opening') or contains(., 'Closing') or contains(.,'Nighthacking'))]",
+  "title": "normalize-space(./text())",
+  "event": "Geekout",
+  "year": "2015"
+},{
+  "_id": "https://www.oop-konferenz.de/oop2020/programm/konferenzprogramm.html",
+  "sites": "//*[@class='title'][not(contains(., 'Welcome'))]//a",
+  "title": "normalize-space(./text())",
+  "event": "OOP",
+  "year": "2020"
+},{
+  "_id": "https://www.oop-konferenz.de/oop2019/programm/konferenzprogramm.html",
+  "sites": "//*[@class='title'][not(contains(., 'Welcome'))]//a",
+  "title": "normalize-space(./text())",
+  "event": "OOP",
+  "year": "2019"
+},{
+  "_id": "https://www.oop-konferenz.de/oop2018/programm/konferenzprogramm.html",
+  "sites": "//*[@class='title'][not(contains(., 'Welcome'))]//a",
+  "title": "normalize-space(./text())",
+  "event": "OOP",
+  "year": "2018"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2019/presentations/",
+  "sites": "//*[@class='frame']//h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2019"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2020/presentations/",
+  "sites": "//*[@class='frame']//h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2020"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2018/presentations.html",
+  "sites": "//*[@class='frame']//h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2018"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2017/presentations.html",
+  "sites": "//*[@class='thumbnail']/a/div/h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2017"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2016/presentations.html",
+  "sites": "//*[@class='thumbnail']/a/div/h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2016"
+},{
+  "_id": "https://devnexus.com/archive/devnexus2015/presentations.html",
+  "sites": "//*[@class='thumbnail']/a/div/h3",
+  "title": "normalize-space(./text())",
+  "event": "DevNexus",
+  "year": "2015"
+},{
+  "_id": "https://mlconference.ai/archive/mlcon-2019-berlin-archive/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2019"
+},{
+  "_id": "https://mlconference.ai/archive/mlcon-2019-spring-archive/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2019"
+},{
+  "_id": "https://mlconference.ai/archive/mlcon-2018-archive/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2018"
+},{
+  "_id": "https://mlconference.ai/archive/mlcon-2018-spring-archive/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2018"
+},{
+  "_id": "https://mlconference.ai/archive/mlcon-2017-archive/",
+  "sites": "//h3[@class='gdlr-session-item-title']/a",
+  "title": "normalize-space(./text())",
+  "event": "ML Conference",
+  "year": "2017"
+},{
+  "_id": "https://devops-fusion.com/programme/",
+  "sites": "//div[@class='session-title']",
+  "title": "normalize-space(./text())",
+  "event": "DevOps Fusion",
+  "year": "2020"
+},{
+  "_id": "https://2020.pycon.org.au/program/fri/",
+  "sites": "//s-schedule//a[contains(@class, 'session session-')]",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2020",
+  "location": "Australia"
+},{
+  "_id": "https://2020.pycon.org.au/program/sat/",
+  "sites": "//s-schedule//a[contains(@class, 'session session-')]",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2020",
+  "location": "Australia"
+},{
+  "_id": "https://www.youtube.com/playlist?list=PLs4CJRBY5F1KrUr7z_2mur2QdAKXyh-k3",
+  "sites": "//*[@page-subtype='playlist']//h3/a[@id='video-title']",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2018",
+  "location": "Australia"
+},{
+  "_id": "https://www.youtube.com/playlist?list=PLs4CJRBY5F1LKqauI3V4E_xflt6Gow611",
+  "sites": "//*[@page-subtype='playlist']//h3/a[@id='video-title']",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2019",
+  "location": "Australia"
+},{
+  "_id": "https://www.youtube.com/playlist?list=PLs4CJRBY5F1KsK4AbFaPsUT8X8iXc7X84",
+  "sites": "//*[@page-subtype='playlist']//h3/a[@id='video-title']",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2017",
+  "location": "Australia"
+},{
+  "_id": "https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule",
+  "sites": "//*[@class='schedule-item__description '][not(contains(.,'OPENING') or contains(.,'SESSION'))]",
+  "title": "normalize-space(./text())",
+  "event": "re-work Deep Learning Virtual 2.0 Summit",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/enterprise-ai-summit/schedule",
+  "sites": "//*[@class='schedule-item__description '][not(contains(.,'OPENING') or contains(.,'SESSION'))]",
+  "title": "normalize-space(./text())",
+  "event": "re-work Deep Learning Virtual 2.0 Summit",
+  "year": "2021"
+},{
+  "_id": "https://www.re-work.co/events/reinforcement-learning-summit/schedule",
+  "sites": "//*[@class='schedule-item__description '][not(contains(.,'OPENING') or contains(.,'SESSION'))]",
+  "title": "normalize-space(./text())",
+  "event": "re-work Deep Learning Virtual 2.0 Summit",
+  "year": "2021"
+},{
+  "_id": "https://archive.fosdem.org/2020/schedule/track/hpc_big_data_and_data_science/",
+  "sites": "//table[@class=\"table table-striped table-bordered table-condensed\"]//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2020",
+  "speaker": "normalize-space(./td[3]/a//text())",
+  "info": "fix title"
+},{
+  "_id": "https://confoo.ca/en/yul2021/schedule",
+  "sites": "//*[@class=\"row \"]//div[@class=\"col-xs-6 col-sm-4 slot\"]",
+  "title": "normalize-space(./*[@class=\"session\"]//a/text())",
+  "event": "Confoo",
+  "year": "2021",
+  "speaker": "normalize-space(./*[@class=\"speaker\"]//a/text())"
+},{
+  "_id": "https://www.datacouncil.ai/san-francisco-2019",
+  "sites": "//li[@class=\"track-details\"]//li/a",
+  "title": "normalize-space(./text())",
+  "event": "Data Council",
+  "year": "2019",
+  "info": "andere id?"
+},{
+  "_id": "https://www.dotnetconf.net/agenda",
+  "sites": "//h2//following-sibling::div//td",
+  "title": "normalize-space(./strong/text())",
+  "event": ".Net Conf",
+  "year": "2020",
+  "speaker": "normalize-space(./a[1]/text())",
+  "info": "archive nur ohne speaker"
+},{
+  "_id": "https://www.dotconferences.com/conference/dotai-2018",
+  "sites": "//*[@class=\"ctalks\"]",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DotAI",
+  "year": "2018",
+  "speaker": "normalize-space(.//p/a/text())",
+  "info": "fix"
+},{
+  "_id": "https://stareast.techwell.com/program/schedule",
+  "sites": "//*[@class=\"grid-slot\"]",
+  "title": "normalize-space(.//*[@class=\"grid-slot-title\"]/a/text())",
+  "event": "StarEast",
+  "year": "2021",
+  "info": "fix",
+  "speaker": "normalize-space(.//*[@class=\"speaker-company\"]//span[1]/text())"
+},{
+  "_id": "https://www.wearedevelopers.com/events/world-congress/program/agenda/",
+  "sites": "//*[contains(@class,\"fusion-panel\")]",
+  "title": "normalize-space(./span[1]/text())",
+  "event": "WeAreDevelopers",
+  "year": "2021",
+  "speaker": "normalize-space(.//span[@class='talk-speaker']/text())",
+  "info": "archiv nur auf youtube"
+},{
+  "_id": "https://thestrangeloop.com/2019/sessions.html",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(.//h4[not(contains(text(),'Closing Keynote') or contains(text(),'STRANGE LOOP PARTY'))]/text())",
+  "event": "The Strange Loop",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://devopscon.io/london/program-london/",
+  "sites": "//*[@class=\"sessoin-speaker-title column ten\"]",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]/a/text())",
+  "location": "London"
+},{
+  "_id": "https://devopscon.io/new-york/program-ny/",
+  "sites": "//*[@class=\"sessoin-speaker-title column ten\"]",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]/a/text())",
+  "location": "New York"
+},{
+  "_id": "https://cz.pycon.org/2019/programme/schedule/",
+  "sites": "//*[@class=\"row\"]/article",
+  "title": "normalize-space(.//h3/a[not(contains(.,'Board game night'))]/text())",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(.//div[1]/div[2]/text())",
+  "location": "Czech Republic"
+},{
+  "_id": "https://pycon.org.il/2019/schedule/",
+  "sites": "//tr/td",
+  "title": "normalize-space(./a[@href]/text()[1])",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(./a[@href]/text()[2])",
+  "location": "Israel"
+},{
+  "_id": "https://in.pycon.org/2020/#schedule",
+  "sites": "//*[@class=\"flex justify-start schedule-item\"]/div[2]/div",
+  "title": "normalize-space(.//a/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(.//small/text())",
+  "info": "fix",
+  "location": "Indien"
+},{
+  "_id": "https://pl.pycon.org/2020/en/agenda/",
+  "sites": "//h2[3]/preceding-sibling::div",
+  "title": "normalize-space(./div[1]/div/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(./div[1]/span/text())",
+  "info": "fix",
+  "location": "Poland"
+},{
+  "_id": "https://pydata.org/austin2019/schedule/",
+  "sites": "//*[@class='slot slot-talk']",
+  "title": "normalize-space(./span/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Austin"
+},{
+  "_id": "https://www.pyohio.org/2020/events/schedule/",
+  "sites": "//li[not(contains(text(), 'Opening Remarks'))]",
+  "title": "normalize-space(./a[not(contains(text(),'Sprints') or contains(text(), 'Discord'))]/text())",
+  "event": "PyOhio",
+  "year": "2020",
+  "speaker": "normalize-space(./text())"
+},{
+  "_id": "https://www.pytexas.org/schedule/",
+  "sites": "//h2",
+  "title": "normalize-space(./text())",
+  "event": "PyTexas",
+  "year": "2020",
+  "speaker": "normalize-space(./following-sibling::div//h5/text())"
+},{
+  "_id": "https://scipy.in/2020#schedule",
+  "sites": "//td",
+  "title": "normalize-space(./text())",
+  "event": "SciPy",
+  "year": "2020",
+  "info": "fix",
+  "location": "India"
+},{
+  "_id": "https://www.euroscipy.org/2019/program.html",
+  "sites": "//td",
+  "title": "normalize-space(./a[not(contains(text(),'Talks') or contains(text(),'maintainers') or contains(text(),'Tutorials'))]/text())",
+  "event": "SciPy",
+  "year": "2020",
+  "speaker": "normalize-space(./text()[preceding-sibling::br])",
+  "location": "Europe"
+},{
+  "_id": "https://2019.pycon.ca/schedule-day-1/",
+  "sites": "//td[@class='schedule-table--col-description']",
+  "title": "normalize-space(./a/text())",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(./text()[preceding-sibling::br][1])",
+  "info": "fix speaker",
+  "location": "Canada"
+},{
+  "_id": "https://pycon.hk/2020-fall/schedule/",
+  "sites": "//td",
+  "title": "normalize-space(./a/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(./text()[preceding-sibling::a])",
+  "info": "???",
+  "location": "Hong Kong"
+},{
+  "_id": "https://pycon.it/en/schedule/2020-11-06",
+  "sites": "//*[@class=\"css-1ej1hme\"]",
+  "title": "normalize-space(./div[1][not(contains(text(),'Welcome') or contains (text(),'Registration') or contains(text(), 'Lunch')or contains(text(), 'TBD') or contains(text(), 'Break') or contains(text(), 'Recruiting') or contains(text(),'Lightning Talks'))]/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(./div[2]/div/div[1])",
+  "location": "Italy"
+},{
+  "_id": "http://www.pycon.se",
+  "sites": "//*[@class=\"cd-schedule__name\"][not(contains(text(),'Opening') or contains(text(),'Keynote') or contains(text(), 'End of Day') or contains(text(),'Discussion') or contains(text(),'Lightning'))]",
+  "title": "normalize-space(./text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space()",
+  "location": "SE"
+},{
+  "_id": "https://bobkonf.de/2020/de/program.html",
+  "sites": "//td[contains(@class, 'bcolor')]",
+  "title": "normalize-space(.//div[contains(@class, 'talktitle') and not(contains(text(),'Opening') or contains(text(),'Eröffnung'))]/text())",
+  "event": "BobKonf",
+  "year": "2020",
+  "speaker": "normalize-space(.//div[contains(@class, 'talkspeaker')]/text())",
+  "info": "archive"
+},{
+  "_id": "https://2019.th.pycon.org/en/schedule/",
+  "sites": "//*[@class=\"schedule-item-container\"]",
+  "title": "normalize-space(./div/b/text())",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(.//div/div[3]/text())",
+  "info": "fix",
+  "location": "TH"
+},{
+  "_id": "https://www.ai-expo.net/europe/track/applied-ai/",
+  "sites": "//*[@class=\"sd_talk-main  col-6 columns\"]",
+  "title": "normalize-space(.//h3/text())",
+  "event": "AI & Big Data Expo",
+  "year": "2020",
+  "speaker": "normalize-space(./div[2]//strong[2])"
+},{
+  "_id": "https://www.ai-expo.net/northamerica/track/applied-ai/",
+  "sites": "//*[@class=\"sd_talk-main  col-6 columns\"]",
+  "title": "normalize-space(.//h3/text())",
+  "event": "AI & Big Data Expo",
+  "year": "2020",
+  "speaker": "normalize-space(./div[2]//strong[2])",
+  "location": "North America"
+},{
+  "_id": "https://www.itnextsummit.com/sprekers/",
+  "sites": "//*[@class=\"spreker\"]",
+  "title": "normalize-space(./div[@class='hover']/text())",
+  "event": "ITNext",
+  "year": "2021",
+  "speaker": "normalize-space(./span[1]/text())"
+},{
+  "_id": "https://www.nodetlv.com/schedule",
+  "sites": "//*[@class=\"bDfMI\"]//p[@class='font_8']",
+  "title": "normalize-space(.//span/span/span/text())",
+  "event": "Node TLV",
+  "year": "2020",
+  "speaker": "normalize-space(.//span[2]/span/text())"
+},{
+  "_id": "https://www.reutersevents.com/events/momentum/conference-agenda.php",
+  "sites": "//*[@class=\"presentation\"]/div",
+  "title": "normalize-space(./div[3]/text())",
+  "event": "Momentum",
+  "year": "2021",
+  "speaker": "normalize-space(./div[5]//span[1])"
+},{
+  "_id": "https://www.apachecon.com/acah2020/tracks/ml.html",
+  "sites": "//*[contains(@name,'T') or contains(@name, 'W')]",
+  "title": "normalize-space(./strong/text())",
+  "event": "ApacheCon",
+  "year": "2020",
+  "speaker": "normalize-space(./following-sibling::strong[1])",
+  "info": "archive"
+},{
+  "_id": "https://python.nz/(X(1)S(ldiao4fcemu0crl3io4qxqcp))/kiwipycon.schedule",
+  "sites": "//td",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "New Zealand"
+},{
+  "_id": "https://belpy.in/schedule.html",
+  "sites": "//td[3]",
+  "title": "normalize-space(./text())",
+  "event": "BelPy",
+  "year": "2021",
+  "speaker": "normalize-space()"
+},{
+  "_id": "http://nationjs.com/program",
+  "sites": "//*[@class=\"schedule\"][2]//td",
+  "title": "normalize-space(./a/text())",
+  "event": "NationJS",
+  "year": "2019",
+  "speaker": "normalize-space(./text()[preceding-sibling::a])"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2019",
+  "sites": "//*[@class=\"team-text\"]",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2019",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://starwest.techwell.com/program/schedule",
+  "sites": "//*[@class=\"grid-slot\"]",
+  "title": "normalize-space(./div[@class=\"grid-slot-title\"]/a/text())",
+  "event": "StarWest",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class=\"speaker-company\"]/span/text())"
+},{
+  "_id": "https://apiconference.net/apicon-2018-spring-archive/",
+  "sites": "//*[@class=\"sessoin-speaker-title column nine\"]",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "ApiCon",
+  "year": "2018",
+  "speaker": "normalize-space(.//div/a/text())"
+},{
+  "_id": "https://devopsdays.org/events/2019-zurich/program",
+  "sites": "//*[contains(@class,\"program-talk\") or contains(@class,'program-workshop')]/a",
+  "title": "normalize-space(./text())",
+  "event": "DevOps Days",
+  "year": "2021",
+  "speaker": "normalize-space()",
+  "info": "archive",
+  "location": "Zürich"
+},{
+  "_id": "https://events.linuxfoundation.org/virtual-lf-ai-day-eu/program/schedule/",
+  "sites": "//td",
+  "title": "normalize-space(./text())",
+  "event": "LFAI Days",
+  "year": "2020",
+  "speaker": "normalize-space(./text())"
+},{
+  "_id": "https://iotcon.de/programm/",
+  "sites": "//*[@class=\"sessoin-speaker-title column ten\"]",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "IoTCon",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]/a/text())"
+},{
+  "_id": "https://online.m3-konferenz.de/programm.php",
+  "sites": "//*[contains(@class,\"slot raum1\")]",
+  "title": "normalize-space(.//a/text())",
+  "event": "M3",
+  "year": "2020",
+  "speaker": "normalize-space(.//div[2]/p[1]/text())"
+},{
+  "_id": "https://odsc.com/apac/conference-schedule/",
+  "sites": "//*[@class=\"scheduled-events desktop\"]//*[@class=\"col-md-12\"]",
+  "title": "normalize-space(.//div[contains(@class,'event-title')]/text())",
+  "event": "ODSC APAC & India",
+  "year": "2021",
+  "speaker": "normalize-space(.//div[@class=\"tcode-es-artist-title\"]/text())"
+},{
+  "_id": "https://sec4dev.io/2021/schedule#nav-Thu",
+  "sites": "//*[@class=\"link-title\"]",
+  "title": "normalize-space(./span[3]/text())",
+  "event": "Sec4Dev",
+  "year": "2021",
+  "speaker": "normalize-space(./span[2]/text())"
+},{
+  "_id": "https://software-architecture-summit.de/programm/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2021",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://fintechconferences.com/agenda/",
+  "sites": "//*[@class=\"item clearfix \"]",
+  "title": "normalize-space(./div/div[2][not(contains(text(),'WELCOME') or contains(text(), 'BREAK') or contains(text(),'END OF DAY'))]/text())",
+  "event": "Fintech World Forum",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]/div[2]/p/strong/text())"
+},{
+  "_id": "https://webinale.de/program/",
+  "sites": "//*[@class=\"sessoin-speaker-title column ten\"]",
+  "title": "normalize-space(./h3/text())",
+  "event": "Webinale",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]/text())"
+},{
+  "_id": "https://agiledevopseast.techwell.com/program/schedule",
+  "sites": "//*[@class=\"grid-slot\"]",
+  "title": "normalize-space(./div[2]/a/text())",
+  "event": "Agile & DevOps",
+  "year": "2020",
+  "speaker": "normalize-space(./div[3]/span/text())"
+},{
+  "_id": "https://midatlantic.womenintechsummit.net/past-event/mid-atlantic-2019/",
+  "sites": "//*[@class=\"t-entry-title h3\"]",
+  "title": "normalize-space(./a/text())",
+  "event": "WITS",
+  "year": "2019",
+  "location": "Mid-Atlantic"
+},{
+  "_id": "https://www.agiletestingdays.com/2020/program/",
+  "sites": "//*[@class=\"row\"]/div",
+  "title": "normalize-space(./h3/text())",
+  "event": "Agile Testing Days",
+  "year": "2020",
+  "speaker": "normalize-space(./div/a/text())",
+  "info": "archiev"
+},{
+  "_id": "https://www.wurreka.com/ict/virtual-conference/gids-2021/sessions",
+  "sites": "//*[@class=\"content\"]",
+  "title": "normalize-space(.//h4/a/text())",
+  "event": "Gids",
+  "year": "2021",
+  "info": "javascript"
+},{
+  "_id": "https://www.pnsqc.org/archives/2019-conference-archives/",
+  "sites": "//*[@class=\"gw-gopf-post-content\"]",
+  "title": "normalize-space(./div[@class=\"gw-gopf-post-title\"]/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2019",
+  "speaker": "normalize-space(./div[@class=\"gw-gopf-post-excerpt\"]/p/a/text())"
+},{
+  "_id": "https://yowconference.com/data/2020",
+  "sites": "//*[@class=\"block\"]",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "Yow! Data",
+  "year": "2020",
+  "speaker": "normalize-space(./ul//div[@class='name']/text())"
+},{
+  "_id": "https://leaddev.com/category/tech",
+  "sites": "//*[@class=\"box__inner\"]",
+  "title": "normalize-space(.//h2/text())",
+  "event": "LeadDev",
+  "year": "2020",
+  "speaker": "normalize-space(.//img/@alt)"
+},{
+  "_id": "https://jax.de/mainz-en/program-mainz-en/",
+  "sites": "//*[@class=\"sessoin-speaker-title column ten\"]",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "JAX",
+  "year": "2021",
+  "speaker": "normalize-space(.//div/a/text())"
+},{
+  "_id": "https://www.conf42.com/sre2020",
+  "sites": "//div[@data-testid=\"inline-content\"]/div/div[@data-testid='richTextElement']",
+  "title": "normalize-space(./h3//span/text())",
+  "event": "SRE",
+  "year": "2020",
+  "speaker": "normalize-space(./p//span/text())"
+},{
+  "_id": "https://craft-conf.com/2019/schedule",
+  "sites": "//td",
+  "title": "normalize-space(./h6/text())",
+  "event": "Craft Conf",
+  "year": "2019",
+  "speaker": "normalize-space(./a/div[@class='speaker']/text())"
+},{
+  "_id": "https://sqadays.com/en/program/82473",
+  "sites": "//*[contains(@class, 'talk-cell')]",
+  "title": "normalize-space(.//a[@class='title']/text())",
+  "event": "SQA",
+  "year": "2021",
+  "speaker": "normalize-space(.//div[@class='talk-author']/text())"
+},{
+  "_id": "https://plus.qconferences.com/schedule/plus2020/tabular",
+  "sites": "//*[@class=\"qcon-plus-schedule-table\"]//td",
+  "title": "normalize-space(./@data-title)",
+  "event": "QCon Plus",
+  "year": "2020",
+  "speaker": "normalize-space(./a/span[@class='speaker']/text())"
+},{
+  "_id": "https://archive.fosdem.org/2020/schedule/track/continuous_integration_and_continuous_deployment/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2020",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2020/schedule/track/mozilla/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2020",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2020/schedule/track/quantum_computing/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2020",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://fosdem.org/2021/schedule/track/hpc_big_data_and_data_science/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2021",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://fosdem.org/2021/schedule/track/monitoring_and_observability/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2021",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://fosdem.org/2021/schedule/track/python/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2021",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2019/schedule/track/hpc_big_data_and_data_science/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2019",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2019/schedule/track/ml_on_code/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2019",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2018/schedule/track/hpc,_big_data,_and_data_science/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2018",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2017/schedule/track/hpc,_big_data_and_data_science/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2017",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2017/schedule/track/python/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2017",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://archive.fosdem.org/2016/schedule/track/hpc,_big_data_and_data_science/",
+  "sites": "//table[@class='table table-striped table-bordered table-condensed']//tr",
+  "title": "normalize-space(./td[2]/a//text())",
+  "event": "Fosdem",
+  "year": "2016",
+  "speaker": "normalize-space(./td[3]/a//text())"
+},{
+  "_id": "https://confoo.ca/en/2015/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class=\"session\"]//a/text())",
+  "event": "Confoo",
+  "year": "2015",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yvr2016/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2016",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/2016/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2016",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yvr2017/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2017",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yul2017/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2017",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yul2018/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2018",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yul2019/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2019",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://confoo.ca/en/yul2020/schedule",
+  "sites": "//*[@class='row ']//div[@class='col-xs-6 col-sm-4 slot']",
+  "title": "normalize-space(./*[@class='session']//a/text())",
+  "event": "Confoo",
+  "year": "2020",
+  "speaker": "normalize-space(./*[@class='speaker']//a/text())"
+},{
+  "_id": "https://www.datacouncil.ai/talks",
+  "sites": "//*[contains(@class,'filterDiv')]",
+  "title": "normalize-space(.//a[@class='talk-title']/text())",
+  "event": "Data Council",
+  "year": "2017-2020",
+  "speaker": "normalize-space(.//span/a/text())"
+},{
+  "_id": "https://thestrangeloop.com/2018/sessions.html",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(.//h4[not(contains(text(),'Closing Keynote') or contains(text(),'STRANGE LOOP PARTY'))]/text())",
+  "event": "The Strange Loop",
+  "year": "2018",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://thestrangeloop.com/2017/sessions.html",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(.//h4[not(contains(text(),'Closing Keynote') or contains(text(),'STRANGE LOOP PARTY'))]/text())",
+  "event": "The Strange Loop",
+  "year": "2017",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://thestrangeloop.com/2016/sessions.html",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(.//h4[not(contains(text(),'Closing Keynote') or contains(text(),'STRANGE LOOP PARTY'))]/text())",
+  "event": "The Strange Loop",
+  "year": "2016",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://thestrangeloop.com/2015/sessions.html",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(.//h4[not(contains(text(),'Closing Keynote') or contains(text(),'STRANGE LOOP PARTY'))]/text())",
+  "event": "The Strange Loop",
+  "year": "2015",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://devopscon.io/archiv-2016/",
+  "sites": "///*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2016",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/devopscon-june-2017/",
+  "sites": "///*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2017",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/devopscon-november-2017/",
+  "sites": "///*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2017",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/devopscon-spring-2018/",
+  "sites": "///*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2018",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/devopscon-december-2018/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2018",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/devopscon-spring-2019/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "DevOpsCon",
+  "year": "2019",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://devopscon.io/archive/archive-munich-2019/",
+  "sites": "//*[@class='sessoin-speaker-title column ten']",
+  "title": "normalize-space(.//h3/a[not(contains(text(), 'Board game night'))]/text())",
+  "event": "DevOpsCon",
+  "year": "2019",
+  "speaker": "normalize-space(.//div/a/text())",
+  "location": "Germany"
+},{
+  "_id": "https://cz.pycon.org/2018/programme/schedule/",
+  "sites": "//div[@class='row justify-content-center']/div",
+  "title": "normalize-space(.//a/text())",
+  "event": "PyCon",
+  "year": "2018",
+  "speaker": "normalize-space(.//span/text())",
+  "location": "Czech Republic"
+},{
+  "_id": "https://cz.pycon.org/2017/speakers/schedule/",
+  "sites": "//div[@class='pc_schedule__room']",
+  "title": "normalize-space(./a/span/text())",
+  "event": "PyCon",
+  "year": "2017",
+  "speaker": "normalize-space(./span/text())",
+  "location": "Czech Republic"
+},{
+  "_id": "https://cz.pycon.org/2016/speakers/schedule/",
+  "sites": "//*[contains(@class, 'timeline__talk ') or contains(@class,'timeline__workshop')]",
+  "title": "normalize-space(.//span[contains(@class, 'title')]/text())",
+  "event": "PyCon",
+  "year": "2016",
+  "speaker": "normalize-space(.//span[contains(@class, 'speaker')]/a/text())",
+  "location": "Czech Republic"
+},{
+  "_id": "https://cz.pycon.org/2015/talks/",
+  "sites": "//*[@class='talk-description']",
+  "title": "normalize-space(./p/text())",
+  "event": "PyCon",
+  "year": "2015",
+  "speaker": "normalize-space(./h3/text())",
+  "location": "Czech Republic"
+},{
+  "_id": "https://pycon.org.il/2018/schedule/",
+  "sites": "//*[contains(@class,'slot')]",
+  "title": "normalize-space(./span/a/text())",
+  "event": "PyCon",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Israel"
+},{
+  "_id": "https://pycon.org.il/wwwpyconIL/agenda-table",
+  "sites": "//li",
+  "title": "normalize-space(.//span[not(contains(text(),'Sprint') or contains(text(),'Closing') or contains(text(), 'Party') or contains(text(),'Break') or contains(text(),'breakfast') or contains(text(),'break') or contains(text(),'Opening'))][2])",
+  "event": "PyCon",
+  "year": "2017",
+  "speaker": "normalize-space()",
+  "location": "Israel"
+},{
+  "_id": "https://pycon.org.il/2016/talks/",
+  "sites": "//*[@class='talk-description']",
+  "title": "normalize-space(.//p[not(contains(text(),'swag bag') or contains(text(),'separate tracks') or contains(text(),'Captain America'))]//text())",
+  "event": "PyCon",
+  "year": "2016",
+  "speaker": "normalize-space(.//*[@class='speaker']/text())",
+  "location": "Israel"
+},{
+  "_id": "https://global.pydata.org//pages/schedule",
+  "sites": "//td",
+  "title": "normalize-space(./a[not(contains(text(),'Talks') or contains(text(),'Sprint') or contains(text(), 'Poster') or contains(text(),'Sign up') or contains(text(), 'Quiz') or contains(text(), 'Organizers Meet'))]/text())",
+  "event": "PyData",
+  "year": "2020",
+  "speaker": "normalize-space()"
+},{
+  "_id": "https://pydata.org/dal2015/schedule/",
+  "sites": "//*[@class='sch_talk' or @class='sch_tutorial']",
+  "title": "normalize-space(.//div[contains(@class,'sch_title') and not(contains(text(),'Hackathon'))]/text())",
+  "event": "PyData",
+  "year": "2015",
+  "speaker": "normalize-space(.//div[contains(@class,'sch_speaker')]/text())",
+  "info": "fix",
+  "location": "Dalas"
+},{
+  "_id": "https://pydata.org/berlin2015/schedule.html",
+  "sites": "//a[@class='schedule-title']",
+  "title": "normalize-space(./b/text())",
+  "event": "PyData",
+  "year": "2015",
+  "speaker": "normalize-space(./text()[1])",
+  "location": "Berlin"
+},{
+  "_id": "https://www.ai-expo.net/europe/track/big-data-analytics/",
+  "sites": "//*[@class='sd_talk-main  col-6 columns']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "AI & Big Data Expo",
+  "year": "2021",
+  "speaker": "normalize-space(./div[2]//strong[2])"
+},{
+  "_id": "https://pydata.org/eindhoven2019/schedule/",
+  "sites": "//*[@class=\"slot slot-talk\" or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "info": "fix",
+  "location": "Eindhoven"
+},{
+  "_id": "https://amsterdam.pydata.org",
+  "sites": "//*[@class='single-event']",
+  "title": "normalize-space(.//em[@class='event-details'][not(contains(text(),'Pandas'))]/text())",
+  "event": "PyData",
+  "year": "2020",
+  "speaker": "normalize-space()",
+  "location": "Amsterdam"
+},{
+  "_id": "https://pydata.org/warsaw2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Warsaw"
+},{
+  "_id": "https://pydata.org/la2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "LA"
+},{
+  "_id": "https://pydata.org/nyc2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "NYC"
+},{
+  "_id": "https://pydata.org/delhi2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Dehli"
+},{
+  "_id": "https://pydata.org/london2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "London"
+},{
+  "_id": "https://pydata.org/amsterdam2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Amsterdam"
+},{
+  "_id": "https://pydata.org/miami2019/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2019",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Miami"
+},{
+  "_id": "https://pydata.org/warsaw2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Warsaw"
+},{
+  "_id": "https://pydata.org/dc2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "DC"
+},{
+  "_id": "https://pydata.org/la2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "LA"
+},{
+  "_id": "https://pydata.org/nyc2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "NYC"
+},{
+  "_id": "https://pydata.org/berlin2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Berlin"
+},{
+  "_id": "https://pydata.org/amsterdam2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Amsterdam"
+},{
+  "_id": "https://pydata.org/london2018/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "London"
+},{
+  "_id": "https://pydata.org/nyc2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "NYC"
+},{
+  "_id": "https://pydata.org/warsaw2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Warsaw"
+},{
+  "_id": "https://pydata.org/delhi2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Dehli"
+},{
+  "_id": "https://pydata.org/seattle2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Seattle"
+},{
+  "_id": "https://pydata.org/berlin2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Berlin"
+},{
+  "_id": "https://pydata.org/barcelona2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Barcelona"
+},{
+  "_id": "https://pydata.org/london2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "London"
+},{
+  "_id": "https://pydata.org/amsterdam2017/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2017",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Amsterdam"
+},{
+  "_id": "https://pydata.org/dc2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "DC"
+},{
+  "_id": "https://pydata.org/carolinas2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Carolina"
+},{
+  "_id": "https://pydata.org/chicago2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Chicago"
+},{
+  "_id": "https://pydata.org/sfo2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "San Francisco"
+},{
+  "_id": "https://pydata.org/berlin2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a[not(contains(text(),'TBA'))]/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Berlin"
+},{
+  "_id": "https://pydata.org/london2016/schedule/",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "London"
+},{
+  "_id": "https://pydata.org/madrid2016/schedule/index.html",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Madrid"
+},{
+  "_id": "https://pydata.org/nyc2015/schedule/index.html",
+  "sites": "//*[@class='slot slot-talk' or @class='slot slot-tutorial']",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2015",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "NYC"
+},{
+  "_id": "https://pydata.org/london2015/schedule/index.html",
+  "sites": "//*[contains(@class,'slot slot-Track') or contains(@class,'slot slot-Tutorial')]",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2015",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "London"
+},{
+  "_id": "https://pydata.org/seattle2015/schedule/index.html",
+  "sites": "//*[contains(@class,'slot slot-Track') or contains(@class,'slot slot-Tutorial')]",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2015",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Seattle"
+},{
+  "_id": "https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/stype/'%20+%20url%20+'.html",
+  "sites": "//*[@class='en_session vevent']",
+  "title": "normalize-space(./div[1]/a/text())",
+  "event": "JupyterCon",
+  "year": "2018",
+  "speaker": "normalize-space(./div[3]/span/a/text())"
+},{
+  "_id": "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7wSZ4z4Vr__D06TflKPlyk49CFfFcJ-WfP-XARavtoB3xLPEQjIuk48pvwpShyT7DpBmPiC5GieCS/pubhtml?gid=0&single=true",
+  "sites": "//*[@class='s7'or @class='s8']",
+  "title": "normalize-space(./text())",
+  "event": "PyData",
+  "year": "2018",
+  "speaker": "normalize-space(./span/text())",
+  "location": "Dehli"
+},{
+  "_id": "https://juliacon2017.sched.com",
+  "sites": "//*[@class='name']",
+  "title": "normalize-space(./text())",
+  "event": "JuliaCon",
+  "year": "2017",
+  "speaker": "normalize-space(./span/text())"
+},{
+  "_id": "https://2017.pyconuk.org/schedule/",
+  "sites": "//td",
+  "title": "normalize-space(./a/text())",
+  "event": "PyCon",
+  "year": "2017",
+  "speaker": "normalize-space(./small/text())"
+},{
+  "_id": "https://pyparis.org/talks.html",
+  "sites": "//li",
+  "title": "normalize-space(./em/text())",
+  "event": "PyParis",
+  "year": "2018",
+  "speaker": "normalize-space(./a[1]/text())"
+},{
+  "_id": "http://2017.pyparis.org/talks.html",
+  "sites": "//li",
+  "title": "normalize-space(./a[1]/text())",
+  "event": "PyParis",
+  "year": "2017",
+  "speaker": "normalize-space(./text())"
+},{
+  "_id": "https://pydata.org/amsterdam2016/schedule/index.html",
+  "sites": "//*[contains(@class,'slot slot-talk') or contains(@class,'slot slot-tutorial')]",
+  "title": "normalize-space(./span[1]/a/text())",
+  "event": "PyData",
+  "year": "2016",
+  "speaker": "normalize-space(./span[2]/a/text())",
+  "location": "Amsterdam"
+},{
+  "_id": "https://www.pyohio.org/2019/events/schedule/",
+  "sites": "//*[@class='schedule-item-wrapper']",
+  "title": "normalize-space(./h3[not(contains(text(),'Lunch') or contains(text(),'Opening') or contains(text(),'Hackfest') or contains(text(),'Registration') or contains(text(),'Quiet Room') or contains(text(),'Open Spaces') or contains(text(),'Welcome') or contains(text(),'Break') or contains(text(),'Lightning Talks') or contains(text(),'Reception'))]/text())",
+  "event": "PyOhio",
+  "year": "2019",
+  "speaker": "normalize-space(./p[@class='schedule-speaker']/text())"
+},{
+  "_id": "https://www.pyohio.org/2018/schedule/",
+  "sites": "//*[@class='slot slot-talk']",
+  "title": "normalize-space(.//span/a[not(contains(text(),'Lightning Talks'))]/text())",
+  "event": "PyOhio",
+  "year": "2018",
+  "speaker": "normalize-space(./span[2]/text())"
+},{
+  "_id": "https://www.pyohio.org/2017/schedule/",
+  "sites": "//*[@class='title']",
+  "title": "normalize-space(./text())",
+  "event": "PyOhio",
+  "year": "2017",
+  "speaker": "normalize-space(./following-sibling::p[@class='speaker'])"
+},{
+  "_id": "https://www.euroscipy.org/2018/program.html",
+  "sites": "//td",
+  "title": "normalize-space(./a/text())",
+  "event": "SciPy",
+  "year": "2018",
+  "speaker": "normalize-space(./*[contains(node(),i) or contains(node(),b)][3])",
+  "location": "Europe"
+},{
+  "_id": "https://www.euroscipy.org/2017/program.html",
+  "sites": "//*[@class='conf-table'][position()>last()-2]//td",
+  "title": "normalize-space(./a/text())",
+  "event": "SciPy",
+  "year": "2017",
+  "speaker": "normalize-space(./*[contains(node(),i) or contains(node(),b)][3])",
+  "location": "Europe"
+},{
+  "_id": "https://www.euroscipy.org/2015/schedule/esp2015-general-sessions/",
+  "sites": "//*[@class='slot slot-talk']",
+  "title": "normalize-space(./span/a[not(contains(text(), 'Keynote'))]/text())",
+  "event": "SciPy",
+  "year": "2015",
+  "speaker": "normalize-space(./span[2]/text())",
+  "location": "Europe"
+},{
+  "_id": "https://www.euroscipy.org/2016/program/index.html",
+  "sites": "//tr[@class='success']",
+  "title": "normalize-space(.//a/text()[2])",
+  "event": "SciPy",
+  "year": "2016",
+  "speaker": "normalize-space(.//a/text()[1])",
+  "location": "Europe"
+},{
+  "_id": "https://2019.pycon.ca/schedule-day-2/",
+  "sites": "//td[@class='schedule-table--col-description']",
+  "title": "normalize-space(./a/text())",
+  "event": "PyCon",
+  "year": "2019",
+  "speaker": "normalize-space(./text()[preceding-sibling::br][1])",
+  "location": "Canada"
+},{
+  "_id": "https://pycon.it/en/schedule/2020-11-07",
+  "sites": "//*[@class='css-1ej1hme']",
+  "title": "normalize-space(./div[1][not(contains(text(),'Welcome') or contains (text(),'Registration') or contains(text(), 'Lunch')or contains(text(), 'TBD') or contains(text(), 'Break') or contains(text(), 'Recruiting') or contains(text(),'Lightning Talks'))]/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(./div[2]/div/div[1])",
+  "location": "Hong Kong"
+},{
+  "_id": "https://pycon.it/en/schedule/2020-11-08",
+  "sites": "//*[@class='css-1ej1hme']",
+  "title": "normalize-space(./div[1][not(contains(text(),'Welcome') or contains (text(),'Registration') or contains(text(), 'Lunch')or contains(text(), 'TBD') or contains(text(), 'Break') or contains(text(), 'Recruiting') or contains(text(),'Lightning Talks'))]/text())",
+  "event": "PyCon",
+  "year": "2020",
+  "speaker": "normalize-space(./div[2]/div/div[1])",
+  "location": "Italy"
+},{
+  "_id": "http://www.pycon.se/2018/",
+  "sites": "//*[@class='p-2']",
+  "title": "normalize-space(./div//a)",
+  "event": "PyCon",
+  "year": "2018",
+  "speaker": "normalize-space(./h4[2])",
+  "location": "SE"
+},{
+  "_id": "http://www.pycon.se/2017/",
+  "sites": "//h2[contains(text(),'Talks')]/following-sibling::ul/li",
+  "title": "normalize-space(./h3)",
+  "event": "PyCon",
+  "year": "2017",
+  "speaker": "normalize-space(./p[1])",
+  "location": "SE"
+},{
+  "_id": "http://www.pycon.se/2016/",
+  "sites": "//h2[contains(text(),'Talks')]/following-sibling::ul/li",
+  "title": "normalize-space(./h3)",
+  "event": "PyCon",
+  "year": "2016",
+  "speaker": "normalize-space(./p[1])",
+  "location": "SE"
+},{
+  "_id": "http://www.pycon.se/2015/",
+  "sites": "//h2[contains(text(),'Talks')]/following-sibling::ul/li",
+  "title": "normalize-space(./h3)",
+  "event": "PyCon",
+  "year": "2015",
+  "speaker": "normalize-space(./p[1])",
+  "location": "SE"
+},{
+  "_id": "https://www.ai-expo.net/virtual/combined-agenda/",
+  "sites": "//*[@class='multi-title']",
+  "title": "normalize-space(.//h3[not(contains(text(), 'End of Day'))]/text())",
+  "event": "AI & Big Data Expo",
+  "year": "2021",
+  "speaker": "normalize-space(./h5[2])",
+  "location": "Global"
+},{
+  "_id": "https://www.ai-expo.net/global/track/ai-for-enterprise/",
+  "sites": "//*[@class='talk-title']",
+  "title": "normalize-space(./h3[not(contains(text(),'Registration') or contains(text(),'Break') or contains(text(),'End of Day'))])",
+  "event": "AI & Big Data Expo",
+  "year": "2021",
+  "speaker": "normalize-space()",
+  "location": "Global"
+},{
+  "_id": "https://www.ai-expo.net/global/track/data-analytics/",
+  "sites": "//*[@class='talk-title']",
+  "title": "normalize-space(./h3[not(contains(text(),'Registration') or contains(text(),'Break') or contains(text(),'End of Day'))])",
+  "event": "AI & Big Data Expo",
+  "year": "2021",
+  "speaker": "normalize-space()",
+  "location": "Global"
+},{
+  "_id": "https://emamo.com/event/api-world-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "API World + AI DevWorld",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())"
+},{
+  "_id": "https://emamo.com/event/developerweek-global-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())",
+  "location": "Global"
+},{
+  "_id": "https://emamo.com/event/developerweek-global-cloud-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek Cloud",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())",
+  "location": "Global"
+},{
+  "_id": "https://emamo.com/event/developerweek-global-enterprise-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek Enterprise",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())",
+  "location": "Global"
+},{
+  "_id": "https://emamo.com/event/developerweek-austin-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())",
+  "location": "Austin"
+},{
+  "_id": "https://emamo.com/event/developerweek-new-york-2020",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())",
+  "location": "New York"
+},{
+  "_id": "https://emamo.com/event/developerweek-2021",
+  "sites": "//*[contains(@class,'session-wrap')]//div[2]",
+  "title": "normalize-space(./h5/a/text())",
+  "event": "DeveloperWeek",
+  "year": "2021",
+  "speaker": "normalize-space(./div[@class='row session-speakers mb-2']//h6/a/text())"
+},{
+  "_id": "https://aceu19.apachecon.com/schedule?day=2019-10-22&track=0&format=0&experience=0&stage=0",
+  "sites": "//*[@class='inner']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "ApacheCon",
+  "year": "2019",
+  "speaker": "normalize-space(./span/a/text())"
+},{
+  "_id": "https://aceu19.apachecon.com/schedule?day=2019-10-23&track=0&format=0&experience=0&stage=0",
+  "sites": "//*[@class='inner']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "ApacheCon",
+  "year": "2019",
+  "speaker": "normalize-space(./span/a/text())"
+},{
+  "_id": "https://aceu19.apachecon.com/schedule?day=2019-10-24&track=0&format=0&experience=0&stage=0",
+  "sites": "//*[@class='inner']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "ApacheCon",
+  "year": "2019",
+  "speaker": "normalize-space(./span/a/text())"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2020",
+  "sites": "//*[@class='team-text']",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2020",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2018",
+  "sites": "//*[@class='team-text']",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2018",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2017",
+  "sites": "//*[@class='team-text']",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2017",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2016",
+  "sites": "//*[@class='team-text']",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2016",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://seetest.org/index.php?page=seetest-2015",
+  "sites": "//*[@class='team-text']",
+  "title": "normalize-space(./text()[2])",
+  "event": "SeeTest",
+  "year": "2015",
+  "speaker": "normalize-space(./h5/strong/text())"
+},{
+  "_id": "https://events19.linuxfoundation.org/events/lfaiday-paris-2019/program/agenda/",
+  "sites": "//div[@class='wpb_wrapper']",
+  "title": "normalize-space(./p[not(contains(text(), 'Welcome'))]/text())",
+  "event": "LFAI Days",
+  "year": "2019",
+  "speaker": "normalize-space()"
+},{
+  "_id": "https://events.linuxfoundation.org/lf-ai-day-onnx-community-virtual-meetup-fall/program/schedule/",
+  "sites": "//td",
+  "title": "normalize-space(./strong[not(contains(text(),'Opening') or contains(text(),'Break'))]/text())",
+  "event": "LFAI Days",
+  "year": "2019",
+  "speaker": "normalize-space(./text()[preceding-sibling::br])"
+},{
+  "_id": "https://iotcon.de/archiv-2019/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "IoTCon",
+  "year": "2019",
+  "speaker": "normalize-space(./div[2]/a/text())"
+},{
+  "_id": "https://iotcon.de/archiv-2018/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "IoTCon",
+  "year": "2018",
+  "speaker": "normalize-space(./div[2]/a/text())"
+},{
+  "_id": "https://iotcon.de/archiv-2017",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "IoTCon",
+  "year": "2017",
+  "speaker": "normalize-space(./div[2]/a/text())"
+},{
+  "_id": "https://iotcon.de/archiv-2016/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "IoTCon",
+  "year": "2016",
+  "speaker": "normalize-space(./div[2]/a/text())"
+},{
+  "_id": "https://sec4dev.io/2020",
+  "sites": "//*[@class='title']",
+  "title": "normalize-space(.//h2/a/text())",
+  "event": "Sec4Dev",
+  "year": "2020",
+  "speaker": "normalize-space(.//span/a/text())"
+},{
+  "_id": "https://sec4dev.io/2019",
+  "sites": "//*[@class='title']",
+  "title": "normalize-space(.//h2/a/text())",
+  "event": "Sec4Dev",
+  "year": "2019",
+  "speaker": "normalize-space(.//span/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/sas-2020-archiv/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2020",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/sas-2020-spring/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2020",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/sas-2019-archiv/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2019",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/sas-2019-spring/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2019",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/sas-2018-archive/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2018",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/sas-2018-spring/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2018",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/2017-september-archiv/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2017",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://software-architecture-summit.de/archiv/2017-maerz-archiv/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Software Architecture Summit",
+  "year": "2017",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://webinale.de/archiv-2019/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Webinale",
+  "year": "2019",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://webinale.de/archiv/archiv-2018/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Webinale",
+  "year": "2018",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://webinale.de/archiv/archiv-2017/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Webinale",
+  "year": "2017",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://webinale.de/archiv/archiv-2016/",
+  "sites": "//*[@class='sessoin-speaker-title column nine']",
+  "title": "normalize-space(.//h3/a/text())",
+  "event": "Webinale",
+  "year": "2016",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://midatlantic.womenintechsummit.net/past-event/mid-atlantic-2018/",
+  "sites": "//*[@class='t-entry-title h3']",
+  "title": "normalize-space(./a/text())",
+  "event": "WITS",
+  "year": "2018",
+  "speaker": "normalize-space()",
+  "location": "Mid-Atlantic"
+},{
+  "_id": "https://midatlantic.womenintechsummit.net/past-event/mid-atlantic-2017/",
+  "sites": "//*[@data-section='2']//*[@class='uncode_text_column']",
+  "title": "normalize-space(./p/text())",
+  "event": "WITS",
+  "year": "2017",
+  "speaker": "normalize-space(./p/a/text())",
+  "location": "Mid-Atlantic"
+},{
+  "_id": "https://midatlantic.womenintechsummit.net/past-event/mid-atlantic-2016/",
+  "sites": "//*[@data-section='2']//*[@class='uncode_text_column']",
+  "title": "normalize-space(./p/text())",
+  "event": "WITS",
+  "year": "2016",
+  "speaker": "normalize-space(./p/a/text())",
+  "location": "Mid-Atlantic"
+},{
+  "_id": "https://midatlantic.womenintechsummit.net/past-event/mid-atlantic-2015/",
+  "sites": "//*[@data-section='2']//*[@class='uncode_text_column']",
+  "title": "normalize-space(./p/text())",
+  "event": "WITS",
+  "year": "2016",
+  "speaker": "normalize-space()",
+  "location": "Mid-Atlantic"
+},{
+  "_id": "https://www.agiletestingdays.com/2020/program/?day=conference-day-2",
+  "sites": "//*[@class='row']/div",
+  "title": "normalize-space(./h3/text())",
+  "event": "Agile Testing Days",
+  "year": "2020",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://www.agiletestingdays.com/2020/program/?day=conference-day-3",
+  "sites": "//*[@class='row']/div",
+  "title": "normalize-space(./h3/text())",
+  "event": "Agile Testing Days",
+  "year": "2020",
+  "speaker": "normalize-space(./div/a/text())"
+},{
+  "_id": "https://wurreka.com/on-demand/aiml",
+  "sites": "//*[@class='col-lg-9 pl-xl-3 pl-lg-5']",
+  "title": "normalize-space(./h1/a/text())",
+  "event": "Gids",
+  "year": "2020",
+  "speaker": "normalize-space(.//span/a/text())",
+  "info": "javascript"
+},{
+  "_id": "https://www.pnsqc.org/archives/2020-conference-archives/",
+  "sites": "//*[@class='gw-gopf-post-content']",
+  "title": "normalize-space(./div[@class='gw-gopf-post-title']/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2020",
+  "speaker": "normalize-space(./div[@class='gw-gopf-post-excerpt']/p/a/text())"
+},{
+  "_id": "https://www.pnsqc.org/archives/2018-conference-archive/",
+  "sites": "//*[@class='gw-gopf-post-content']",
+  "title": "normalize-space(./div[@class='gw-gopf-post-title']/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2018",
+  "speaker": "normalize-space(./div[@class='gw-gopf-post-excerpt']/p/a/text())"
+},{
+  "_id": "https://www.pnsqc.org/archives/2017-conference-archive/",
+  "sites": "//*[@class='gw-gopf-post-content']",
+  "title": "normalize-space(./div[@class='gw-gopf-post-title']/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2017",
+  "speaker": "normalize-space(./div[@class='gw-gopf-post-excerpt']/p/a/text())"
+},{
+  "_id": "https://www.pnsqc.org/archives/2016-conference/",
+  "sites": "//*[@class='gw-gopf-post-content']",
+  "title": "normalize-space(./div[@class='gw-gopf-post-title']/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2016",
+  "speaker": "normalize-space(./div[@class='gw-gopf-post-excerpt']/p/a/text())"
+},{
+  "_id": "https://www.pnsqc.org/archives/2015-conference/",
+  "sites": "//*[@class='gw-gopf-post-content']",
+  "title": "normalize-space(./div[@class='gw-gopf-post-title']/h2/a/text())",
+  "event": "Software Quality Conf",
+  "year": "2015",
+  "speaker": "normalize-space(./div[@class='gw-gopf-post-excerpt']/p/a/text())"
+},{
+  "_id": "https://yowconference.com/data/2019/",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "Yow! Data",
+  "year": "2019",
+  "speaker": "normalize-space(./ul//div[@class='name']/text())"
+},{
+  "_id": "https://yowconference.com/data/2018/",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "Yow! Data",
+  "year": "2018",
+  "speaker": "normalize-space(./ul//div[@class='name']/text())"
+},{
+  "_id": "https://yowconference.com/data/2017/",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "Yow! Data",
+  "year": "2017",
+  "speaker": "normalize-space(./ul//div[@class='name']/text())"
+},{
+  "_id": "https://yowconference.com/data/2016/",
+  "sites": "//*[@class='block']",
+  "title": "normalize-space(./h3/a/text())",
+  "event": "Yow! Data",
+  "year": "2016",
+  "speaker": "normalize-space(./ul//div[@class='name']/text())"
+},{
+  "_id": "https://leaddev.com/category/process",
+  "sites": "//*[@class='box__inner']",
+  "title": "normalize-space(.//h2/text())",
+  "event": "LeadDev",
+  "year": "2020",
+  "speaker": "normalize-space(.//img/@alt)"
+},{
+  "_id": "https://leaddev.com/category/team",
+  "sites": "//*[@class='box__inner']",
+  "title": "normalize-space(.//h2/text())",
+  "event": "LeadDev",
+  "year": "2020",
+  "speaker": "normalize-space(.//img/@alt)"
+},{
+  "_id": "https://leaddev.com/category/personal-development",
+  "sites": "//*[@class='box__inner']",
+  "title": "normalize-space(.//h2/text())",
+  "event": "LeadDev",
+  "year": "2020",
+  "speaker": "normalize-space(.//img/@alt)"
+},{
+  "_id": "https://berlin2019.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "Berlin"
+},{
+  "_id": "https://london2019.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "London"
+},{
+  "_id": "https://newyork2019.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "New York"
+},{
+  "_id": "https://austin2019.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "Austin"
+},{
+  "_id": "https://austin2018.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2018",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "Austin"
+},{
+  "_id": "https://london2018.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2018",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "London"
+},{
+  "_id": "https://2017.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='session__link']",
+  "title": "normalize-space(.//h3/text())",
+  "event": "LeadDev",
+  "year": "2017",
+  "speaker": "normalize-space(.//p/text())",
+  "location": "London"
+},{
+  "_id": "https://2016.theleaddeveloper.com/schedule",
+  "sites": "//*[@class='schedule__item__name']",
+  "title": "normalize-space(.//h3[not(contains(text(),\"Close\") or contains(text(), \"Summing up\") or contains(text(),\"Welcome\") or contains(text(), \"Coffee\") or contains(text(),\"Drink\") or contains(text(),\"Refreshment\") or contains(text(),\"Registration\"))]/text())",
+  "event": "LeadDev",
+  "year": "2016",
+  "speaker": "normalize-space(.//span/text())",
+  "location": "London"
+},{
+  "_id": "https://romobos.com/2019-edition/agenda",
+  "sites": "//td",
+  "title": "normalize-space(.//a/text())",
+  "event": "Mobos",
+  "year": "2019",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://romobos.com/5th-edition/agenda",
+  "sites": "//td",
+  "title": "normalize-space(.//a/text())",
+  "event": "Mobos",
+  "year": "2018",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://romobos.com/agenda-2",
+  "sites": "//td",
+  "title": "normalize-space(.//p[3]/em/text())",
+  "event": "Mobos",
+  "year": "2017",
+  "speaker": "normalize-space(.//a/text())"
+},{
+  "_id": "https://romobos.com/3rd-edition/agenda",
+  "sites": "//td",
+  "title": "normalize-space(.//p[3]/em/text())",
+  "event": "Mobos",
+  "year": "2016",
+  "speaker": "normalize-space(.//a/text())"
+},{
+  "_id": "https://romobos.com/mobos-2014/agenda",
+  "sites": "//td",
+  "title": "normalize-space(.//*[self::a or self::em]/*[self::a or self::em]/text())",
+  "event": "Mobos",
+  "year": "2015",
+  "speaker": "normalize-space(.//p/strong/text())"
+},{
+  "_id": "https://romobos.com/2020-edition/agenda",
+  "sites": "//td",
+  "title": "normalize-space(.//a/text())",
+  "event": "Mobos",
+  "year": "2020",
+  "speaker": "normalize-space(.//*[self::p or self::h4]//text())",
+  "info": "fix"
+},{
+  "_id": "https://craft-conf.com/2018/schedule",
+  "sites": "//td[@class='talk ']",
+  "title": "normalize-space(./h6/a/text())",
+  "event": "Craft Conf",
+  "year": "2018",
+  "speaker": "normalize-space(./div[@class='speaker']/text())"
+},{
+  "_id": "https://craft-conf.com/2017/schedule",
+  "sites": "//td[@class=\"talk \"]",
+  "title": "normalize-space(./h6/a/text())",
+  "event": "Craft Conf",
+  "year": "2017",
+  "speaker": "normalize-space(./div[@class=\"speaker\"]/text())"
+},{
+  "_id": "https://craft-conf.com/2016/schedule",
+  "sites": "//td[@class='talk ']",
+  "title": "normalize-space(./h6/a/text())",
+  "event": "Craft Conf",
+  "year": "2016",
+  "speaker": "normalize-space(./div[@class='speaker']/text())"
+},{
+  "_id": "https://programm.javaland.eu/2018/#/schedule/2018-03-13",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung'))]/text())",
+  "event": "JavaLand",
+  "year": "2018",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2018/#/schedule/2018-03-14",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung'))]/text())",
+  "event": "JavaLand",
+  "year": "2018",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2018/#/schedule/2018-03-15",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung'))]/text())",
+  "event": "JavaLand",
+  "year": "2018",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2019/#/schedule/2019-03-18",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung') or contains(text(), 'Lunch')  or contains(text(), 'Diner') or contains(text(), 'Open Park'))]/text())",
+  "event": "JavaLand",
+  "year": "2019",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2019/#/schedule/2019-03-19",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung') or contains(text(), 'Lunch')  or contains(text(), 'Diner') or contains(text(), 'Open Park'))]/text())",
+  "event": "JavaLand",
+  "year": "2019",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2019/#/schedule/2019-03-20",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung') or contains(text(), 'Lunch')  or contains(text(), 'Diner') or contains(text(), 'Open Park'))]/text())",
+  "event": "JavaLand",
+  "year": "2019",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://programm.javaland.eu/2019/#/schedule/2019-03-21",
+  "sites": "//*[@class=\"title darkLink\"]",
+  "title": "normalize-space(./a[not(contains(text(), 'Begrüßung') or contains(text(), 'Lunch')  or contains(text(), 'Diner') or contains(text(), 'Open Park'))]/text())",
+  "event": "JavaLand",
+  "year": "2019",
+  "location": "EU",
+  "speaker": "normalize-space(./following-sibling::div[@class='speaker']/span/text())"
+},{
+  "_id": "https://jlcfp.mjit.io/de/javaland2021/public/schedule/1",
+  "sites": "//*[@class=\"event-wrapper\"]",
+  "title": "normalize-space(.//h2/a[not(contains(text(), 'Welcome') or contains(text(), 'Frühstück'))]/text())",
+  "event": "JavaLand",
+  "year": "2021",
+  "location": "EU",
+  "speaker": "normalize-space(.//div[@class=\"speakers\"]/a/text())"
+},{
+  "_id": "https://jlcfp.mjit.io/de/javaland2021/public/schedule/2",
+  "sites": "//*[@class=\"event-wrapper\"]",
+  "title": "normalize-space(.//h2/a[not(contains(text(), 'Welcome') or contains(text(), 'Frühstück'))]/text())",
+  "event": "JavaLand",
+  "year": "2021",
+  "location": "EU",
+  "speaker": "normalize-space(.//div[@class=\"speakers\"]/a/text())"
+}]

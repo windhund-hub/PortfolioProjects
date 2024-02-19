@@ -1,0 +1,681 @@
+[{
+  "_id": "https://machinelearnings.co/tagged/machine-learning",
+  "articles": "//*[contains(@class,\"streamItem\")]",
+  "title": "./h3[contains(@class,\"graf--title\")]/text()",
+  "writer": ".//a[contains(@dir,\"auto\")]/text()",
+  "info": "fix"
+},{
+  "_id": "https://openai.com/blog/",
+  "articles": "//div[@class='container']/div",
+  "title": ".//h5/text()",
+  "date": "./div/a/time/text()"
+},{
+  "_id": "https://intelligence.org/category/analysis/",
+  "articles": "//article//li",
+  "title": "./a/text()",
+  "date": "./text()[2]"
+},{
+  "_id": "https://ryanswanstrom.com/datascience101/",
+  "articles": "//li",
+  "title": "./a/text()",
+  "info": "geht nicht wenn mehrere"
+},{
+  "_id": "https://blog.insightdatascience.com/tagged/insight-ai",
+  "articles": "//*[contains(@class,\"streamItem\")]",
+  "title": ".//h3[contains(@class,\"graf--title\")]/text()",
+  "writer": ".//a[contains(@dir,\"auto\")]/text()",
+  "info": "fix"
+},{
+  "_id": "https://blog.insightdatascience.com/tagged/insight-data-engineering",
+  "articles": "//*[contains(@class,\"streamItem\")]",
+  "title": ".//h3[contains(@class,\"graf--title\")]/text()",
+  "writer": ".//a[contains(@dir,\"auto\")]/text()",
+  "info": "fix"
+},{
+  "_id": "https://blog.insightdatascience.com/tagged/insight-data-science",
+  "articles": "//*[contains(@class,\"streamItem\")]",
+  "title": ".//h3[contains(@class,\"graf--title\")]/text()",
+  "writer": ".//a[contains(@dir,\"auto\")]/text()",
+  "info": "fix"
+},{
+  "_id": "https://www.mdmgeek.com",
+  "articles": "//h2[@class=\"h5\"]",
+  "title": "./a/text()",
+  "info": "fix"
+},{
+  "_id": "https://algorithmia.com/blog",
+  "articles": "//div[contains(@class, \"post-preview\")]",
+  "title": "normalize-space(.//a[contains(@class, \"post-preview-meta__title\")]/text())",
+  "pagination": "https://algorithmia.com/blog",
+  "next_page": "//*[@class=\"pagination__arrow-container\"][2]/a/@href",
+  "date": "./div/div[1]/text()",
+  "info": "geht nicht wenn mehrere"
+},{
+  "_id": "https://machinelearningmastery.com/blog/",
+  "articles": "//article",
+  "title": "./a/@title",
+  "writer": ".//a[@rel='author']/text()",
+  "pagination": "https://machinelearningmastery.com/blog/",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//*[contains(@class,'date')]/text()"
+},{
+  "_id": "https://www.aitrends.com/category/deep-learning/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/deep-learning/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/blockchain/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/blockchain/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/cloud-2/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/cloud-2/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/emotion-recognition/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/emotion-recognition/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/ecommerce/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/ecommerce/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/bots/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/bots/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/security/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/security/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/image-recognition/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/image-recognition/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/machine-learning/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/machine-learning/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/neural-networks/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/neural-networks/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/predictive-analytics/",
+  "articles": "//*[@class=\"td-ss-main-content\"]//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/predictive-analytics/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/category/ai-software/",
+  "articles": "//*[@class=\"td-block-span6\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/category/ai-software/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://www.aitrends.com/nlp-speech-recognition/",
+  "articles": "//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/nlp-speech-recognition/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href",
+  "info": "js"
+},{
+  "_id": "https://www.aitrends.com/research-the-future-of-ai/",
+  "articles": "//*[@class=\"item-details\"]",
+  "title": ".//h3/a/@title",
+  "date": ".//time/text()",
+  "pagination": "https://www.aitrends.com/research-the-future-of-ai/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href"
+},{
+  "_id": "https://locallyoptimistic.com",
+  "articles": "//*[@class=\"blog_post_title\"]",
+  "title": "./h2/a/text()",
+  "date": "./following-sibling::div//time/text()",
+  "writer": "./following-sibling::div//*[@class=\"blog_meta_item blog_meta_author\"]//a/text()",
+  "pagination": "https://locallyoptimistic.com",
+  "next_page": "//*[@class=\"navigation_links navigation_next\"]/a/@href"
+},{
+  "_id": "https://huyenchip.com/blog/",
+  "articles": "//*[@class=\"post-list\"]/li",
+  "title": "./h2/a/text()",
+  "date": "./*[@class=\"post-meta\"]/text()",
+  "pagination": "https://huyenchip.com/blog/"
+},{
+  "_id": "https://insights.sei.cmu.edu",
+  "articles": "//*[@class=\"media-body\"]",
+  "title": "./h4/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://insights.sei.cmu.edu",
+  "next_page": "//*[@class=\"paginationBottom pagination\"]/li[last()]",
+  "writer": "./*[@class=\"m-media-object__listing__author\"]/a/text()"
+},{
+  "_id": "http://bugra.github.io",
+  "articles": "//*[@class=\"content\"]/h1",
+  "title": "./a/text()",
+  "date": "./following-sibling::subtitle/text()"
+},{
+  "_id": "https://christophergs.com/archive/",
+  "articles": "//*[@id='archive']//li",
+  "title": "./a/div[2]/text()",
+  "date": "./a/div[1]/text()"
+},{
+  "_id": "https://www.infoq.com/MachineLearning/presentations/",
+  "articles": "//*[@class='card__data']",
+  "title": "normalize-space(./h3/a/text())",
+  "next_page": "//*[@class=\"actions items__navigator\"]//div[@class='actions__right']/a/@href",
+  "date": ".//span[@class='card__date date']/span/text()",
+  "writer": ".//div[@class='card__authors authors']/span/a/text()",
+  "main_url": "https://www.infoq.com",
+  "pagination": "https://www.infoq.com/MachineLearning/presentations/"
+},{
+  "_id": "https://www.infoq.com/ai-ml-data-eng/articles/",
+  "articles": "//*[@class='card__data']",
+  "title": "normalize-space(./h3/a/text())",
+  "pagination": "https://www.infoq.com/ai-ml-data-eng/articles/",
+  "next_page": "//*[@class=\"actions items__navigator\"]//div[@class='actions__right']/a/@href",
+  "date": ".//span[@class='card__date date']/span/text()",
+  "writer": ".//div[@class='card__authors authors']/span/a/text()",
+  "main_url": "https://www.infoq.com"
+},{
+  "_id": "https://aitopics.org/search?filters=taxnodes:Genre%7CPersonal",
+  "articles": "//*[@class=\"searchtitle\"]",
+  "title": "./a/text()",
+  "date": "./following-sibling::div//time/text()",
+  "pagination": "https://aitopics.org/search?filters=taxnodes:Genre%7CPersonal",
+  "main_url": "https://aitopics.org/search",
+  "next_page": "//*[@class=\"pagination\"]/li[last() - 1]/a/@href",
+  "writer": "./following-sibling::p//span//a/text()"
+},{
+  "_id": "https://aitopics.org/search?filters=taxnodes%3AGenre%7CResearch+Report",
+  "articles": "//*[@class=\"searchtitle\"]",
+  "title": "./a/text()",
+  "date": "./following-sibling::div//time/text()",
+  "pagination": "https://aitopics.org/search?filters=taxnodes%3AGenre%7CResearch+Report",
+  "main_url": "https://aitopics.org/search",
+  "next_page": "//*[@class=\"pagination\"]/li[last() - 1]/a/@href",
+  "writer": "./following-sibling::p//span//a/text()"
+},{
+  "_id": "https://www.analyticsvidhya.com/blog/category/machine-learning/",
+  "articles": "//*[@class=\"item-medium post-box-big\"]",
+  "title": "./h3/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://www.analyticsvidhya.com/blog/category/machine-learning/",
+  "writer": ".//span[@class='entry-author']/a/text()",
+  "next_page": "//a[@class='next']/@href"
+},{
+  "_id": "https://www.analyticsvidhya.com/blog/category/deep-learning/",
+  "articles": "//*[@class=\"item-medium post-box-big\"]",
+  "title": "./h3/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://www.analyticsvidhya.com/blog/category/deep-learning/",
+  "next_page": "//a[@class='next']/@href",
+  "writer": ".//span[@class='entry-author']/a/text()"
+},{
+  "_id": "https://www.analyticsvidhya.com/blog/category/career/",
+  "articles": "//*[@class=\"item-medium post-box-big\"]",
+  "title": "./h3/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://www.analyticsvidhya.com/blog/category/career/",
+  "next_page": "//a[@class='next']/@href",
+  "writer": ".//span[@class='entry-author']/a/text()"
+},{
+  "_id": "https://veredshwartz.blogspot.com",
+  "articles": "//*[@class=\"content-inner\"]",
+  "title": ".//h3[@class=\"post-title entry-title\"]/a/text()",
+  "date": ".//*[@class=\"date-header\"]/span/text()",
+  "pagination": "https://veredshwartz.blogspot.com",
+  "next_page": "//*[@id=\"blog-pager-older-link\"]/a/@href"
+},{
+  "_id": "https://www.sicara.ai/blog/",
+  "articles": "//*[@class=\"content-inner\"]",
+  "title": ".//h3[@class=\"post-title entry-title\"]/a/text()",
+  "date": ".//*[@class=\"date-header\"]/span/text()",
+  "pagination": "https://veredshwartz.blogspot.com",
+  "next_page": "//*[@id=\"blog-pager-older-link\"]/a/@href"
+},{
+  "_id": "https://ctovision.com/artificial-intelligence/",
+  "articles": "//*[@class='content']//*[@class=\"entry-header\"]",
+  "title": "./h2/a/text()",
+  "date": ".//*[@class=\"entry-time\"]/text()",
+  "pagination": "https://ctovision.com/artificial-intelligence/",
+  "next_page": "//*[@class=\"pagination-next\"]/a/@href",
+  "writer": ".//span[@class=\"entry-author-name\"]/text()"
+},{
+  "_id": "https://gigaom.com/blog/",
+  "articles": "//*[@class=\"main-content\"]//article",
+  "title": ".//h2/a/text()",
+  "date": ".//time//text()",
+  "pagination": "https://gigaom.com/blog/",
+  "next_page": "//*[@class=\"next page-number\"]/@href",
+  "writer": ".//*[@class=\"entry-author author\"]//text()"
+},{
+  "_id": "https://gigaom.com/research/",
+  "articles": "//*[@class=\"main-content\"]//article",
+  "title": ".//h2/a/text()",
+  "date": ".//time//text()",
+  "pagination": "https://gigaom.com/research/",
+  "next_page": "//*[@class=\"next page-number\"]/@href",
+  "writer": ".//*[@class=\"entry-author author\"]//text()"
+},{
+  "_id": "https://news.mit.edu/topic/artificial-intelligence2?type=1&page=0",
+  "articles": "//*[@class=\"term-page--news-article--item--descr\"]",
+  "title": "./h3/a/span/text()",
+  "date": ".//time/text()",
+  "pagination": "https://news.mit.edu/topic/artificial-intelligence2?type=1&page=0",
+  "next_page": "//*[@class=\"js-pager__items\"]/li/a[contains(@rel, \"next\")]/@href",
+  "main_url": "https://news.mit.edu"
+},{
+  "_id": "https://bair.berkeley.edu/blog/",
+  "articles": "//*[@class=\"post\"]",
+  "title": "./h1//a/text()",
+  "date": ".//span[@class='post-meta'][2]/text()",
+  "pagination": "https://bair.berkeley.edu/blog/",
+  "next_page": "//*[@class=\"right\"]/a/@href",
+  "main_url": "https://bair.berkeley.edu",
+  "writer": ".//span[@class='post-meta']/a/text()"
+},{
+  "_id": "https://aws.amazon.com/de/blogs/machine-learning/",
+  "articles": "//*[@class=\"blog-post\"]",
+  "title": ".//h2//span/text()",
+  "date": ".//time/text()",
+  "pagination": "https://aws.amazon.com/de/blogs/machine-learning/",
+  "next_page": "//*[@class=\"blog-pagination\"]/a/@href",
+  "writer": ".//*[@property=\"author\"]/span/text()"
+},{
+  "_id": "https://petewarden.com",
+  "articles": "//article",
+  "title": ".//h1/a/text()",
+  "date": ".//span[@class=\"entry-date\"]/a/text()",
+  "pagination": "https://petewarden.com",
+  "next_page": "//*[@class=\"nav-previous\"]/a/@href",
+  "writer": ".//span[@class=\"author vcard\"]/a/text()"
+},{
+  "_id": "https://www.aiiottalk.com/artificial-intelligence-new/",
+  "articles": "//*[@class=\"elementor-widget-container\"]//*[@class=\"elementor-post__text\"]",
+  "title": ".//h3/a/text()",
+  "pagination": "https://www.aiiottalk.com/artificial-intelligence-new/",
+  "next_page": "//*[@class=\"page-numbers next\"]/@href",
+  "writer": ".//div/span/text()"
+},{
+  "_id": "https://www.aiiottalk.com/machine-learning-new/",
+  "articles": "//*[@class=\"elementor-widget-container\"]//*[@class=\"elementor-post__text\"]",
+  "title": ".//h3/a/text()",
+  "pagination": "https://www.aiiottalk.com/machine-learning-new/",
+  "next_page": "//*[@class=\"page-numbers next\"]/@href",
+  "writer": ".//div/span/text()"
+},{
+  "_id": "https://iris.ai/blog/",
+  "articles": "//*[@class=\"post-content\"]",
+  "title": "./h2/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://iris.ai/blog/",
+  "next_page": "//*[@class=\"pagenav clearfix\"]/a[last()-1]/@href",
+  "writer": ".//span[@class=\"post-author-name\"]/a/text()"
+},{
+  "_id": "http://fastml.com",
+  "articles": "//article",
+  "title": ".//h1/a/text()",
+  "date": ".//time/text()",
+  "pagination": "http://fastml.com",
+  "next_page": "//*[@class=\"pagination\"]/a[@class='prev']/@href",
+  "main_url": "http://fastml.com"
+},{
+  "_id": "https://www.artificial-intelligence.blog/artificial-intelligence-news-archive",
+  "articles": "//*[@class=\"archive-item \"]",
+  "title": ".//a/text()"
+},{
+  "_id": "https://www.artificial-intelligence.blog/education/",
+  "articles": "//header",
+  "title": "./h2/a/text()[2]",
+  "date": "./h2/a/time/@datetime"
+},{
+  "_id": "https://www.artificial-intelligence.blog/technologies",
+  "articles": "//header",
+  "title": "./h2/a/text()[2]",
+  "date": "./h2/a/time/@datetime"
+},{
+  "_id": "https://ai.googleblog.com",
+  "articles": "//*[@class=\"post\"]",
+  "title": "./h2/a/text()",
+  "date": ".//div[@class=\"published\"]/span/text()",
+  "pagination": "https://ai.googleblog.com",
+  "next_page": "//*[@class=\"blog-pager-older-link\"]/@href",
+  "writer": ".//span[@class=\"byline-author\"]/text()"
+},{
+  "_id": "https://www.topbots.com/category/articles/",
+  "articles": "//*[@class='entry-header']",
+  "title": "./h2/a/text()",
+  "date": ".//time/text()",
+  "pagination": "https://www.topbots.com/category/articles/",
+  "next_page": "//*[@class=\\\"next\\\"]/@href",
+  "writer": ".//*[@class=\\\"entry-author-name\\\"]/text()"
+},{
+  "_id": "https://2021.ai/blog/",
+  "articles": "//article[contains(@class,'et_pb_post')]",
+  "title": "./h3/a/text()",
+  "pagination": "https://2021.ai/blog/",
+  "next_page": "//*[@class=\"pagination clearfix\"]//a/@href"
+},{
+  "_id": "https://www.inovex.de/blog/tag/ai/",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "date": ".//div[2]/span[@class=\"updated rich-snippet-hidden\"]/text()",
+  "info": "button"
+},{
+  "_id": "https://www.lindera.de/category/technology-ai-blog/",
+  "articles": "//*[@id=\"content\"]//*[@class=\"post clearfix\"]",
+  "title": ".//h2/a/text()",
+  "pagination": "https://www.lindera.de/category/technology-ai-blog/",
+  "next_page": "//*[@id=\"pagination\"]/a/@href",
+  "date": ".//*[@class=\"meta-date\"]/time/text()",
+  "writer": ".//*[@class=\"meta-author\"]/a/text()"
+},{
+  "_id": "http://karpathy.github.io",
+  "articles": "//*[@class=\"posts\"]/li",
+  "title": "./a/text()",
+  "date": "./span/text()"
+},{
+  "_id": "https://algobeans.com/all-posts/",
+  "articles": "//*[@class=\"entry-title\"]",
+  "title": "./a/text()"
+},{
+  "_id": "https://andrew.gibiansky.com/archive.html",
+  "articles": "//*[@id='blog-archives']//article",
+  "title": "./h1/a/text()",
+  "date": ".//preceding-sibling::h2[1]/text()"
+},{
+  "_id": "https://andrew.gibiansky.com",
+  "articles": "//*[@class='posts']//article",
+  "title": ".//h3/a/text()",
+  "pagination": "https://andrew.gibiansky.com",
+  "next_page": "//*[@class=\"pagination\"]/a[contains(@class,'next')]/@href",
+  "main_url": "https://andrew.gibiansky.com"
+},{
+  "_id": "http://blog.echen.me",
+  "articles": "//article",
+  "title": "./h1/a/text()",
+  "pagination": "http://blog.echen.me",
+  "next_page": "//*[@class=\"paginator\"]//a[contains(text(),'Next')]/@href",
+  "main_url": "http://blog.echen.me"
+},{
+  "_id": "https://www.kdnuggets.com/news/index.html",
+  "articles": "//*[@id=\"content\"]//li",
+  "title": "./a/b/text()",
+  "date": "./font/text()",
+  "writer": "./text()[1]"
+},{
+  "_id": "https://www.kdnuggets.com/2021/index.html",
+  "articles": "//*[@id=\"content\"]//li",
+  "title": ".//a/text()",
+  "pagination": "https://www.kdnuggets.com/2021/index.html",
+  "next_page": "//*[@class=\"breadcumb\"]//img[contains(@alt, '<')]/parent::a/@href",
+  "date": ".//font/text()",
+  "main_url": "https://www.kdnuggets.com"
+},{
+  "_id": "https://research.aimultiple.com",
+  "articles": "//header[@class='entry-header']",
+  "title": "./h2/a/text()",
+  "pagination": "https://research.aimultiple.com",
+  "next_page": "//*[@class=\"nav-links\"]/*[@class=\"next page-numbers\"]/@href",
+  "date": ".//ul[@class=\"post-meta\"]//a/text()"
+},{
+  "_id": "https://blog.kore.ai",
+  "articles": "//*[@class=\"post-header\"]",
+  "title": "./h2/a/text()",
+  "pagination": "https://blog.kore.ai",
+  "next_page": "//*[@class=\"pager-next\"]/a/@href"
+},{
+  "_id": "https://www.clarifai.com/blog",
+  "articles": "//*[@class=\"post-item\"]",
+  "title": ".//h2/a/span/text()",
+  "info": "button"
+},{
+  "_id": "https://expertsystem.com/blog/",
+  "articles": "//article",
+  "title": ".//h6/text()",
+  "pagination": "https://expertsystem.com/blog/",
+  "next_page": "//*[@class=\"pagination\"]/*[@class=\"float-right\"]/a/@href",
+  "date": ".//span[@class='date']/text()",
+  "info": "date?"
+},{
+  "_id": "https://www.marktechpost.com/category/technology/artificial-intelligence/",
+  "articles": "//*[@class=\"item-details\"]",
+  "title": ".//h3/a/text()",
+  "pagination": "https://www.marktechpost.com/category/technology/artificial-intelligence/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href",
+  "date": ".//time/text()",
+  "writer": ".//span[@class=\"td-post-author-name\"]/a/text()"
+},{
+  "_id": "https://techspective.net/category/technology/artificial-intelligence/",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://techspective.net/category/technology/artificial-intelligence/",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//time/text()"
+},{
+  "_id": "https://www.inbenta.com/en/blog/",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://www.inbenta.com/en/blog/",
+  "next_page": "//*[@class=\"pagination\"]/li[last()]/a/@href"
+},{
+  "_id": "https://usmsystems.com/blog/",
+  "articles": "//article",
+  "title": ".//h4/a/text()",
+  "pagination": "https://usmsystems.com/blog/",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//*[@class=\"published\"]/a/text()"
+},{
+  "_id": "https://blog.paralleldots.com",
+  "articles": "//*[@class=\"entry-header\"]",
+  "title": ".//h2/a/text()",
+  "pagination": "https://blog.paralleldots.com",
+  "next_page": "//*[@class=\"nav-previous\"]/a/@href",
+  "date": ".//time/text()"
+},{
+  "_id": "https://www.aitimejournal.com/category/data-science",
+  "articles": "//header[@class='entry-header']",
+  "title": "./h3/a/text()",
+  "pagination": "https://www.aitimejournal.com/category/data-science",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//time/text()",
+  "writer": ".//*[@class=\"author vcard\"]/a/text()"
+},{
+  "_id": "https://www.cogitotech.com/blog/",
+  "articles": "//*[@class='entry-content']//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://www.cogitotech.com/blog/",
+  "next_page": "//*[@class=\"pagination clearfix\"]/*[@class='alignleft']/a/@href",
+  "date": ".//*[@class=\"published\"]/text()",
+  "writer": ".//*[@class=\"author vcard\"]//a/text()"
+},{
+  "_id": "https://www.masstlc.org/category/ai/",
+  "articles": "//*[@class=\"item-details\"]",
+  "title": "./h3/a/text()",
+  "pagination": "https://www.masstlc.org/category/ai/",
+  "next_page": "//*[@class=\"page-nav td-pb-padding-side\"]/a[last()]/@href",
+  "date": ".//time/text()"
+},{
+  "_id": "http://aiweekly.co",
+  "articles": "//*[@class=\"item item--issue item--link\"]",
+  "title": ".//h3/a/text()",
+  "pagination": "http://aiweekly.co",
+  "next_page": "//*[@class=\"previous\"]/a/@href",
+  "main_url": "http://aiweekly.co",
+  "writer": ".//*[@class=\"item__footer-link\"]/a/text()"
+},{
+  "_id": "https://www.yseop.com/resources?field_article_type_target_id=19",
+  "articles": "//*[@class=\"col-12 col-md-12 col-lg-6\"]",
+  "title": ".//h3/span/text()",
+  "pagination": "https://www.yseop.com/resources?field_article_type_target_id=19",
+  "next_page": "//*[@class=\"pager__item\"]/a[contains(@rel, 'next')]/@href",
+  "date": ".//*[@class=\"date\"]/text()",
+  "main_url": "https://www.yseop.com/resources",
+  "info": "last two dropped"
+},{
+  "_id": "https://brighterion.com/blog/",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://brighterion.com/blog/",
+  "next_page": "//*[@class=\"pagination-next\"]/@href",
+  "date": ".//*[@class=\"fusion-month-year\"]/text()",
+  "writer": ".//ul//img/@alt"
+},{
+  "_id": "https://chooch.ai/computer-vision-services/",
+  "articles": "//*[@class=\"eachBlogPost\"]",
+  "title": "./h2/a/text()",
+  "pagination": "https://chooch.ai/computer-vision-services/",
+  "next_page": "//*[@class=\"nav-next\"]/@href"
+},{
+  "_id": "http://blog.datumbox.com",
+  "articles": "//*[@class=\"blog margin-bottom-30\"]",
+  "title": ".//h2/a/text()",
+  "pagination": "http://blog.datumbox.com",
+  "next_page": "//*[@class=\"pagination pagination-centered\"]//a[contains(text(), 'Prev')]/@href",
+  "date": ".//*[@class=\"unstyled inline blog-info\"]/li[1]/text()",
+  "writer": ".//*[@class=\"unstyled inline blog-info\"]/li[2]/a/text()"
+},{
+  "_id": "http://tryswivl.com/blog/",
+  "articles": "//article",
+  "title": ".//h2/text()",
+  "pagination": "http://tryswivl.com/blog/",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href"
+},{
+  "_id": "https://www.goodai.com/blog/",
+  "articles": "//article",
+  "title": "./h2/text()",
+  "pagination": "https://www.goodai.com/blog/",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//*[@class=\"new-date\"]/text()"
+},{
+  "_id": "https://www.aimlmarketplace.com/read-ai-ml-blogs",
+  "articles": "//*[@class=\"entry-header\"]",
+  "title": "./h2/a/text()",
+  "pagination": "https://www.aimlmarketplace.com/read-ai-ml-blogs",
+  "next_page": "//*[@class=\"next\"]/@href",
+  "date": ".//time/text()",
+  "main_url": "https://www.aimlmarketplace.com"
+},{
+  "_id": "https://robotwritersai.com",
+  "articles": "//*[@class=\"entry-header\"]",
+  "title": "./h1/a/text()",
+  "pagination": "https://robotwritersai.com",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//time/text()",
+  "writer": ".//*[@class=\"author vcard\"]/a/text()"
+},{
+  "_id": "https://neurosys.com/blog/",
+  "articles": "//*[@class=\"inner\"]/a",
+  "title": "./h5/text()",
+  "pagination": "https://neurosys.com/blog/",
+  "next_page": "//*[@class=\"next\"]/a/@href",
+  "date": "./*[@class=\"date\"]/text()"
+},{
+  "_id": "https://www.danrose.ai/blog",
+  "articles": "//article",
+  "title": ".//h1/a/text()",
+  "pagination": "https://www.danrose.ai/blog",
+  "next_page": "//*[@class=\"next-label\"]//parent::a/@href",
+  "date": ".//time/text()",
+  "main_url": "https://www.danrose.ai",
+  "writer": ".//*[@class=\"blog-author\"]/text()"
+},{
+  "_id": "https://www.lorienpratt.com/category/artificial-intelligence/",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://www.lorienpratt.com/category/artificial-intelligence/",
+  "next_page": "//*[@class=\"next right\"]/a/@href",
+  "date": ".//time/text()"
+},{
+  "_id": "https://aiaspirant.com",
+  "articles": "//header",
+  "title": "./h2/a/text()",
+  "pagination": "https://aiaspirant.com",
+  "next_page": "//*[@class=\"next page-numbers\"]/@href",
+  "date": ".//time/text()",
+  "writer": ".//*[@class=\"author vcard\"]/a/text()"
+},{
+  "_id": "https://smartlake.ch/articles/",
+  "articles": "//article",
+  "title": "./h2/a/text()",
+  "pagination": "https://smartlake.ch/articles/",
+  "next_page": "//*[@class=\"alignleft\"]/a/@href",
+  "date": ".//*[@class=\"published\"]/text()",
+  "writer": ".//*[@class=\"author vcard\"]/a/text()"
+},{
+  "_id": "https://anotherdatum.com/index.html",
+  "articles": "//article",
+  "title": ".//h2/a/text()",
+  "pagination": "https://anotherdatum.com/index.html",
+  "next_page": "//*[@class=\"pagination-prev\"]/@href",
+  "date": ".//time/text()"
+},{
+  "_id": "https://playment.io/blog",
+  "articles": "//*[@role=\"listitem\"]",
+  "title": ".//h2/text()",
+  "pagination": "https://playment.io/blog",
+  "next_page": "//*[@class=\"w-pagination-wrapper pagination\"]/a[contains(@class,'next')]/@href",
+  "main_url": "https://playment.io/blog"
+},{
+  "_id": "https://developers.google.com/machine-learning/guides",
+  "articles": "//h3",
+  "title": "./a/text()"
+},{
+  "_id": "https://www.tecton.ai/blog/",
+  "articles": "//*[@class=\"posts-column-container\"]",
+  "title": ".//h3/text()",
+  "date": ".//*[@class=\"date\"]/span/text()",
+  "writer": ".//*[@class=\"author-text\"]/text()"
+},{
+  "_id": "https://medium.com/dagster-io",
+  "articles": "//*[contains(@class,'PostPresentation')]",
+  "title": ".//h3/div/text()",
+  "date": ".//time/text()",
+  "writer": ".//*[contains(@class, 'author')]/a/text()"
+},{
+  "_id": "https://www.anyscale.com/blog",
+  "articles": "//*[@class=\"articles-list__article-main___19-tx\"]",
+  "title": ".//h3/text()",
+  "pagination": "https://www.anyscale.com/blog",
+  "next_page": "//div[contains(@class, 'pagination')]/a[contains(text(), 'Next')]/@href",
+  "main_url": "https://www.anyscale.com",
+  "date": "./span/text()",
+  "writer": "./div/a/text()"
+},{
+  "_id": "https://unbabel.com/blog/category/artificial-intelligence/",
+  "articles": "//*[@class=\"post-teaser__body\"]",
+  "title": "normalize-space(./h1/a/text())",
+  "writer": "normalize-space(./div[@class=\"post-teaser__author\"]/a/text())",
+  "button": "button[class='alm-load-more-btn more']"
+}]
