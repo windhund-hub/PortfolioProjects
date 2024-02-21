@@ -12,54 +12,40 @@ public class VocabularyStatistic {
     private Integer id;
     @Column
     @NotNull
-    private int anzahl_trainings = 0;
+    private int numberOfTraining;
     @Column
     @NotNull
-    private int anzahl_erfolgreich = 0;
+    private int numberOfSuccess;
 
-    public VocabularyStatistic(int anzahl_trainings,int anzahl_erfolgreich ) {
-       this.anzahl_trainings = anzahl_trainings;
-       this.anzahl_erfolgreich = anzahl_erfolgreich;
+    public VocabularyStatistic() {
+       this.numberOfTraining = 0;
+       this.numberOfSuccess = 0;
     }
-    public VocabularyStatistic(){
-
-    }
-
-    public void updateTraining(boolean erfolg) {
-
-        if (erfolg) {
-            this.anzahl_erfolgreich++;
-        }
-
-        this.anzahl_trainings++;
-    }
-    public void setNumberOfTraining(int anzahl_trainings){
-        this.anzahl_trainings = anzahl_trainings;
-    }
-
-    public void setNumberOfSuccess(int anzahl_erfolgreich){
-        this.anzahl_erfolgreich = anzahl_erfolgreich;
-    }
-
-    public int getSuccessNumber(){
-        return this.anzahl_erfolgreich;
-    }
-
-    public double getSuccessRate() {
-
-        if (this.anzahl_trainings == 0) {
-            return 0.0;
-        }
-
-        return (double) this.anzahl_erfolgreich / (double) this.anzahl_trainings;
-    }
-
-    public int getTrainingsRate() {
-        return this.anzahl_trainings;
-    }
-
 
     public Integer getId() {
         return id;
     }
+    public void setNumberOfTraining(int numberOfTraining){
+        this.numberOfTraining = numberOfTraining;
+    }
+
+    public void setNumberOfSuccess(int numberOfSuccess){
+        this.numberOfSuccess = numberOfSuccess;
+    }
+
+    public int getNumberOfSuccess(){
+        return this.numberOfSuccess;
+    }
+
+    public int getNumberOfTraining() {
+        return this.numberOfTraining;
+    }
+
+    public double getSuccessRate() {
+        if (this.numberOfTraining == 0) {
+            return 0.0;
+        }
+        return (double) this.numberOfSuccess / (double) this.numberOfTraining;
+    }
+
 }

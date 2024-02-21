@@ -40,7 +40,7 @@ public class TestVocabularyPresenter {
     public void showNextVocabulary() {
         if (iter.hasNext()) {
             currentVocabulary = iter.next();
-            view.setExpression(currentVocabulary.getWord());
+            view.setExpression(currentVocabulary.getExpression());
             view.clearTranslationField();
             view.updateButtonsForNextVocabulary();
         } else {
@@ -89,8 +89,8 @@ public class TestVocabularyPresenter {
     private void updateStats(boolean success) {
         // Logik zur Aktualisierung der Statistiken
         int foreignKey = currentVocabulary.getVocabularyStatistic().getId();
-        int numberOfTrainings = vocabularyStatisticService.findById(foreignKey).getTrainingsRate();
-        int numberOfSuccess = vocabularyStatisticService.findById(foreignKey).getSuccessNumber();
+        int numberOfTrainings = vocabularyStatisticService.findById(foreignKey).getNumberOfTraining();
+        int numberOfSuccess = vocabularyStatisticService.findById(foreignKey).getNumberOfSuccess();
         if (success) {
             numberOfSuccess += 1;
         }

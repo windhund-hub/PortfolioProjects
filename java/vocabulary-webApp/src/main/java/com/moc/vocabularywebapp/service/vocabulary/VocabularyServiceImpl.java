@@ -42,7 +42,8 @@ public class VocabularyServiceImpl implements VocabularyService{
 
     @Override
     public Integer findIdByExpression(String expression) {
-        return vocabularyRepository.findIdByName(expression);
+        //return vocabularyRepository.findIdByName(expression);
+        return vocabularyRepository.findIdByExpression(expression);
     }
 
 }

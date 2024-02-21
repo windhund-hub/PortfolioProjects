@@ -16,8 +16,9 @@ public interface VocabularyRepository extends JpaRepository<Vocabulary, Integer>
     @Query("select v from Vocabulary v where lower(v.translation) like lower(concat('%',:substring,'%' ))")
     List<Vocabulary> findTranslation(String substring);
 
-    @Query("select v from Vocabulary v where v.expression=:expression")
-    Integer findIdByName(String expression);
+    //@Query("select v from Vocabulary v where v.expression=:expression")
+    //    Integer findIdByName(String expression);
+    Integer findIdByExpression(String expression);
 
 
 

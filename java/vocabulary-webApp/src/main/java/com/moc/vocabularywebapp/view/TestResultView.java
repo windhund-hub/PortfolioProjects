@@ -51,7 +51,7 @@ public class TestResultView extends VerticalLayout {
 
     private void configureGrid() {
         grid.setSizeFull();
-        grid.addColumn(entry -> (entry.getKey()).getWord()).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
+        grid.addColumn(entry -> (entry.getKey()).getExpression()).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
         grid.addColumn(entry -> (entry.getKey()).getTranslation()).setHeader(label.getString(LabelKeys.TRANSLATION_TABLE_HEADER));
         grid.addColumn(Map.Entry::getValue).setHeader(label.getString(LabelKeys.RESULT_TABLE_HEADER));
         add(grid);        }

@@ -33,7 +33,7 @@ public class StudyVocabularyPresenter {
     }
 
     private void updateViewWithCurrentVocabulary(Vocabulary currentVocabulary) {
-        view.setExpression(currentVocabulary.getWord());
+        view.setExpression(currentVocabulary.getExpression());
         view.setTranslation(currentVocabulary.getTranslation());
     }
 

@@ -19,6 +19,7 @@ public class LabelKeys {
     public static final String TRANSLATION_TABLE_HEADER = "translation.table.header";
     public static final String TESTED_TABLE_HEADER = "tested.table.header";
     public static final String SUCCESS_TABLE_HEADER = "success.table.header";
+    public static final String SUCCES_RATE_TABLE_HEADER = "success.rate.table.header" ;
     public static final String NOT_ACCESSIBLE = "not.accessible.table.header";
     public static final String BACK_BUTTON = "back.button";
     public static final String NEXT_BUTTON = "next.button";
@@ -36,5 +37,6 @@ public class LabelKeys {
     public static final String WRONG_ANSWER = "wrong.answer";
     public static final String EMPTY_FIELD = "empty.field";
     public static final String DOT = "dot";
+
 
 }

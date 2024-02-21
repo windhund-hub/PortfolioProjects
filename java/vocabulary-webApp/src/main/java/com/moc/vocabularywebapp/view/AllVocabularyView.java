@@ -108,15 +108,18 @@ public class AllVocabularyView extends VerticalLayout {
 
    private void configureGrid() {
         grid.setSizeFull();
-        grid.addColumn(Vocabulary::getWord).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
+        grid.addColumn(Vocabulary::getExpression).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
         grid.addColumn(Vocabulary::getTranslation).setHeader(label.getString(LabelKeys.TRANSLATION_TABLE_HEADER));
         grid.addColumn(vocabulary -> {
             VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
-            return vocabularyStatistic!= null ? vocabularyStatistic.getTrainingsRate():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.TESTED_TABLE_HEADER));
+            return vocabularyStatistic!= null ? vocabularyStatistic.getNumberOfTraining():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.TESTED_TABLE_HEADER));
         grid.addColumn(vocabulary -> {VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
-            return vocabularyStatistic!= null ? vocabularyStatistic.getSuccessNumber():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.SUCCESS_TABLE_HEADER));
+            return vocabularyStatistic!= null ? vocabularyStatistic.getNumberOfSuccess():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.SUCCESS_TABLE_HEADER));
+       grid.addColumn(vocabulary -> {VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
+           return vocabularyStatistic!= null ? vocabularyStatistic.getSuccessRate():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.SUCCES_RATE_TABLE_HEADER));
 
-        grid.getColumns().forEach(column -> column.setAutoWidth(true));
+
+       grid.getColumns().forEach(column -> column.setAutoWidth(true));
 
     }
 }

@@ -14,6 +14,7 @@ public interface VocabularyService {
     List<Vocabulary> findTranslation(String substring);
     VocabularyStatistic findStatisticId(Integer id);
     Integer findIdByExpression(String expression);
+    //Integer findIdByExpression(String expression);
 
 
 }

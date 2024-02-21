@@ -1,20 +1,26 @@
 package com.moc.vocabularywebapp.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 
 
 @Entity
 public class Vocabulary {
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique=true)
     private Integer id;
 
-    @Column
+    @Column(unique=true)
+    @NotEmpty(message = "Expression muss gesetzt werden.")
+    @Pattern(regexp = "^[A-Za-z]+$", message = "Es dürfen nur Buchstaben enthalten sein")
     private String expression;
-    @Column
+
+    @Column(unique=true)
+    @NotEmpty(message = "Translation muss gesetzt werden.")
+    @Pattern(regexp = "^[A-Za-z]+$", message = "Es dürfen nur Buchstaben enthalten sein")
     private String translation;
 
     @OneToOne
@@ -25,28 +31,25 @@ public class Vocabulary {
 
         this.expression = expression;
         this.translation = translation;
-        //vocabularyStatistic = new VocabularyStatistic();
+        vocabularyStatistic = new VocabularyStatistic();
     }
 
     public Vocabulary() {
 
     }
-    public void setId(Integer id){
-        this.id = id;
-    }
+
     public Integer getId() {
         return this.id;
     }
 
-    public String getWord(){
+    public String getExpression(){
 
-        return this.expression;
+            return this.expression;
     }
 
     public String getTranslation(){
 
         return this.translation;
-
     }
 
     public VocabularyStatistic getVocabularyStatistic(){
