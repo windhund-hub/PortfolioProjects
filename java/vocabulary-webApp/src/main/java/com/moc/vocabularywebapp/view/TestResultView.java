@@ -9,12 +9,15 @@ import com.moc.vocabularywebapp.service.result.ResultService;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import java.util.Locale;
+import java.util.Map.Entry;
 import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.Set;
+import java.util.*;
+
 import com.moc.vocabularywebapp.constant.LabelKeys;
+import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
@@ -50,11 +53,28 @@ public class TestResultView extends VerticalLayout {
     }
 
     private void configureGrid() {
+
+
         grid.setSizeFull();
         grid.addColumn(entry -> (entry.getKey()).getExpression()).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
         grid.addColumn(entry -> (entry.getKey()).getTranslation()).setHeader(label.getString(LabelKeys.TRANSLATION_TABLE_HEADER));
-        grid.addColumn(Map.Entry::getValue).setHeader(label.getString(LabelKeys.RESULT_TABLE_HEADER));
-        add(grid);        }
+        grid.addComponentColumn(entry -> {
+            Icon icon;
+            if(entry.getValue().equals("true")){
+
+                icon = VaadinIcon.CHECK_CIRCLE.create();
+                icon.setColor("green");
+            }else{
+                icon = VaadinIcon.CLOSE_CIRCLE.create();
+                icon.setColor("red");
+            }
+            return icon;
+        }).setHeader(label.getString(LabelKeys.RESULT_TABLE_HEADER));
+
+        //Map.Entry::getValue).setHeader(label.getString(LabelKeys.RESULT_TABLE_HEADER));
+
+        add(grid);
+    }
 
     public void updateGrid(Set<Map.Entry<Vocabulary, String>> results) {
         grid.setItems(results);

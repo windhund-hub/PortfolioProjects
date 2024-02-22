@@ -44,6 +44,9 @@ public class MainView  extends AppLayout{
     private SideNav getSideNav() {
 
         SideNav sideNav = new SideNav();
+
+
+
         sideNav.addItem(
                 new SideNavItem(label.getString(LabelKeys.ALL_VOCABULARY_SIDENAV), route.getString(RouteKeys.ALL_VOCABULARY_ROUTE),
                         VaadinIcon.GRID_SMALL.create()),
@@ -52,16 +55,21 @@ public class MainView  extends AppLayout{
                         VaadinIcon.ACADEMY_CAP.create()),
                 //TODO eigene liste mit eigenen vokbeln und auswahl aus verhandnen
                 new SideNavItem(label.getString(LabelKeys.CREATE_VOCABULARYLIST_SIDENAV), route.getString(RouteKeys.CREATE_VOCABULARY_LIST_ROUTE),
-                        VaadinIcon.HAMMER.create()),
+                        VaadinIcon.HAMMER.create()));
 
                 //TODO SPrache in submenu einfügem
-                new SideNavItem(label.getString(LabelKeys.SITE_LANGUAGE_SIDENAV), route.getString(RouteKeys.SITE_LANGUAGE_ROUTE),
-                VaadinIcon.FLAG_O.create()));
+                //new SideNavItem(label.getString(LabelKeys.SITE_LANGUAGE_SIDENAV), route.getString(RouteKeys.SITE_LANGUAGE_ROUTE),
+                //VaadinIcon.FLAG_O.create()));
                        // VaadinIcon.SMILEY_O.create()));
+                 SideNavItem siteLanguage = new SideNavItem(label.getString(LabelKeys.SITE_LANGUAGE_SIDENAV));
+                 siteLanguage.setPrefixComponent(VaadinIcon.FLAG_O.create());
+                 siteLanguage.addItem(new SideNavItem(label.getString(LabelKeys.GERMAN_SIDENAV)));
+                 siteLanguage.addItem(new SideNavItem(label.getString(LabelKeys.ENGLISH_SIDENAV)));
+                 sideNav.addItem(siteLanguage);
+
 
         return sideNav;
     }
-
 
 
 
