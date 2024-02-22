@@ -7,6 +7,9 @@ import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.moc.vocabularywebapp.view.TestVocabularyView;
 import java.util.List;
 import java.util.ListIterator;
+import static java.lang.Boolean.TRUE;
+import static java.lang.Boolean.FALSE;
+
 
 //TODO Change String wrong answer
 public class TestVocabularyPresenter {
@@ -15,7 +18,6 @@ public class TestVocabularyPresenter {
     private final VocabularyService vocabularyService;
     private final ResultService resultService;
     private final VocabularyStatisticService vocabularyStatisticService;
-    private List<Vocabulary> vocabularyList;
     private ListIterator<Vocabulary> iter;
     private Vocabulary currentVocabulary;
 
@@ -28,7 +30,7 @@ public class TestVocabularyPresenter {
     }
 
     private void loadVocabularies() {
-        vocabularyList = vocabularyService.findAll();
+        List<Vocabulary> vocabularyList = vocabularyService.findAll();
         if (!vocabularyList.isEmpty()) {
             iter = vocabularyList.listIterator();
             showNextVocabulary();
@@ -52,12 +54,12 @@ public class TestVocabularyPresenter {
 
         boolean isCorrect = userTranslation.trim().equalsIgnoreCase(currentVocabulary.getTranslation());
         if (isCorrect) {
-            resultService.setResult(currentVocabulary, "Richtig");
+            resultService.setResult(currentVocabulary,"true");
             view.showCorrectAnswerNotification();
             updateStats(true);
             showNextVocabulary();
         } else {
-            resultService.setResult(currentVocabulary, "Falsch");
+            resultService.setResult(currentVocabulary, "false");
             view.showWrongAnswerNotification();
             view.clearTranslationField();
         }
@@ -66,7 +68,7 @@ public class TestVocabularyPresenter {
     public void showSolution() {
         view.setTranslation(currentVocabulary.getTranslation());
         view.updateButtonsForSolution();
-        resultService.setResult(currentVocabulary, "Falsch");
+        resultService.setResult(currentVocabulary, "false");
         updateStats(false);
     }
 
