@@ -6,15 +6,24 @@ import org.junit.jupiter.api.Test;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//@DataJpaTest
+@DataJpaTest
 class VocabularyEntityTest {
 
+
     private Vocabulary vocabulary;
+
     private Validator validator;
+
+    @Autowired
+    private TestEntityManager testEntityManager;
 
     @BeforeEach
     void setUp() {
@@ -43,9 +52,10 @@ class VocabularyEntityTest {
 
     @Test
     void testVocabularyRelation_whenSetVocabulary_thenCorrectStatisticDefault() {
-        assertEquals(0, vocabulary.getVocabularyStatistic().getNumberOfTraining());
-        assertEquals(0, vocabulary.getVocabularyStatistic().getNumberOfSuccess());
+        vocabulary = testEntityManager.persistAndFlush(vocabulary);
 
+        assertEquals(0, vocabulary.getVocabularyStatistic().getNumberOfTraining(), "Expected value should be 0");
+        assertEquals(0, vocabulary.getVocabularyStatistic().getNumberOfSuccess(), "Expected value should be 0");
     }
 
 }
