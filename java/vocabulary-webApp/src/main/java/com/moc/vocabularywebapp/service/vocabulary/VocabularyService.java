@@ -1,7 +1,7 @@
 package com.moc.vocabularywebapp.service.vocabulary;
 
 import com.moc.vocabularywebapp.model.Vocabulary;
-import com.moc.vocabularywebapp.model.VocabularyStatistic;
+import com.moc.vocabularywebapp.model.VocabularyList;
 
 import java.util.List;
 
@@ -12,9 +12,5 @@ public interface VocabularyService {
     List<Vocabulary> findAll();
     List<Vocabulary> findExpression(String substring);
     List<Vocabulary> findTranslation(String substring);
-    VocabularyStatistic findStatisticId(Integer id);
-    Integer findIdByExpression(String expression);
-    //Integer findIdByExpression(String expression);
-
-
+    VocabularyList createVocabularyList(String userId, VocabularyList list);
 }

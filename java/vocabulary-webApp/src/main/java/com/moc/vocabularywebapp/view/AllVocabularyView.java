@@ -15,7 +15,6 @@ import com.vaadin.flow.component.contextmenu.MenuItem;
 import com.vaadin.flow.component.contextmenu.SubMenu;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.menubar.MenuBar;
-import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -51,13 +50,14 @@ public class AllVocabularyView extends VerticalLayout {
         this.label = ResourceBundle.getBundle(ResourceBundleNames.LABLE_BUNDLE, locale);
         this.route = ResourceBundle.getBundle(ResourceBundleNames.ROUTE_BUNDLE, locale);
         setSizeFull();
-        setAlignItems(FlexComponent.Alignment.CENTER);
+        setAlignItems(Alignment.START);
         createViewVariables();
         configureGrid();
         createToolBar();
         createMenu();
         this.presenter = new AllVocabularyPresenter(this, vocabularyService);
         addVocabularyButton.setEnabled(false);
+        menuBar.setEnabled(false);
         add(horizontalLayout, grid);
     }
 
@@ -113,9 +113,11 @@ public class AllVocabularyView extends VerticalLayout {
         grid.addColumn(vocabulary -> {
             VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
             return vocabularyStatistic!= null ? vocabularyStatistic.getNumberOfTraining():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.TESTED_TABLE_HEADER));
-        grid.addColumn(vocabulary -> {VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
+        grid.addColumn(vocabulary -> {
+            VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
             return vocabularyStatistic!= null ? vocabularyStatistic.getNumberOfSuccess():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.SUCCESS_TABLE_HEADER));
-       grid.addColumn(vocabulary -> {VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
+       grid.addColumn(vocabulary -> {
+           VocabularyStatistic vocabularyStatistic = vocabulary.getVocabularyStatistic();
            return vocabularyStatistic!= null ? vocabularyStatistic.getSuccessRate():label.getString(LabelKeys.NOT_ACCESSIBLE);}).setHeader(label.getString(LabelKeys.SUCCES_RATE_TABLE_HEADER));
 
 

@@ -1,42 +1,37 @@
 package com.moc.vocabularywebapp.service.statistic;
 
 import com.moc.vocabularywebapp.model.Vocabulary;
-import com.moc.vocabularywebapp.repository.VocabularyStatisticsRepository;
 import com.moc.vocabularywebapp.model.VocabularyStatistic;
+import com.moc.vocabularywebapp.repository.VocabularyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-
+//TODO
 @Service
-public class VocabularyStatisticServiceImpl implements VocabularyStatisticService{
+public class VocabularyStatisticServiceImpl implements VocabularyStatisticService {
 
     @Autowired
-    private VocabularyStatisticsRepository vocabularyStatisticsRepository;
-    @Override
-    public void save(VocabularyStatistic vocabularyStatistic) {
-        vocabularyStatisticsRepository.save(vocabularyStatistic);
-    }
+    private VocabularyRepository vocabularyRepository;
 
-    public VocabularyStatistic findById(Integer id) {
-        Optional<VocabularyStatistic> result = vocabularyStatisticsRepository.findById(id);
-        if (result.isPresent()) {
-            return result.get();
-        } else {
-            throw new RuntimeException("Statistik mit ID " + id + " nicht gefunden.");
-        }
+    @Override
+    public void save(VocabularyStatistic vocabularyStatistic, String vocabularyId) {
+        //vocabularyRepositoryMongo.save(vocabularyStatisticMongo);
+        // Da VocabularyStatistic jetzt ein Teil von Vocabulary ist, sollte diese Methode
+        // entsprechend angepasst werden, was bedeutet, dass das Speichern von Statistiken
+        // direkt in Verbindung mit einem Vocabulary-Dokument erfolgt.
     }
 
     @Override
-    public VocabularyStatistic updateStatistic(Integer id, int numberOfTrainings, int numberOfSuccess) {
-        return vocabularyStatisticsRepository.findById(id).map(vocabularyStatistic -> {
-            // Aktualisiere die Eigenschaften des Eintrags
+    public VocabularyStatistic updateStatistic(String vocabularyId, int numberOfTrainings, int numberOfSuccess) {
+        Vocabulary vocabulary = vocabularyRepository.findById(vocabularyId)
+                .orElseThrow(() -> new RuntimeException("Vokabel nicht gefunden!"));
 
-            vocabularyStatistic.setNumberOfTraining(numberOfTrainings);
-            vocabularyStatistic.setNumberOfSuccess(numberOfSuccess);
-            // Speichere den aktualisierten Eintrag
-            return vocabularyStatisticsRepository.save(vocabularyStatistic);
-        }).orElseThrow(() -> new RuntimeException("Statistik nicht gefunden!"));
+        vocabulary.getVocabularyStatistic().setNumberOfTraining(numberOfTrainings);
+        vocabulary.getVocabularyStatistic().setNumberOfSuccess(numberOfSuccess);
+
+        vocabularyRepository.save(vocabulary);
+
+        return vocabulary.getVocabularyStatistic();
     }
+
 }

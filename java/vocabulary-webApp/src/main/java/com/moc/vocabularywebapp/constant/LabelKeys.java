@@ -49,5 +49,6 @@ public class LabelKeys {
     public static final String DOT = "dot";
 
 
-
+    public static final String CREATE_LIST_BUTTON = "create.vocabulary.list.button" ;
+    public static final String LISTNAME = "vocabulary.list.name";
 }

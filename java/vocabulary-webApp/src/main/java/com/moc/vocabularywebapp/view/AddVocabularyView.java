@@ -26,13 +26,13 @@ import java.util.ResourceBundle;
 
 //TODO
 @PageTitle("Vokabel hinzufügen")
-@Route(value = "add-vocabulary", layout=MainView.class)
+@Route(value = Constants.ADD_VOCABULARY_ROUTE, layout=MainView.class)
 public class AddVocabularyView extends VerticalLayout {
 
-    Locale locale;
-    ResourceBundle label;
-    ResourceBundle route;
-    ResourceBundle message;
+    private Locale locale;
+    private ResourceBundle label;
+    private ResourceBundle route;
+    private ResourceBundle message;
     private VocabularyService vocabularyService;
     private TextField word;
     private TextField translation;

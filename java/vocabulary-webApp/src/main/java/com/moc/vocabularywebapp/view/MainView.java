@@ -7,7 +7,10 @@ import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
@@ -25,15 +28,15 @@ public class MainView  extends AppLayout{
     private Locale locale;
     private ResourceBundle label;
     private ResourceBundle route;
+
     public MainView(){
-        locale = UI.getCurrent().getLocale();
-        label = ResourceBundle.getBundle(ResourceBundleNames.LABLE_BUNDLE, locale);
-        route = ResourceBundle.getBundle(ResourceBundleNames.ROUTE_BUNDLE, locale);
+        createVariables();
         DrawerToggle toggle = new DrawerToggle();
         H1 title = new H1(label.getString(LabelKeys.APP_TITLE));
         title.getStyle().set("font-size", "var(--lumo-font-size-l)")
                 .set("margin", "0");
         SideNav nav = getSideNav();
+
         Scroller scroller = new Scroller(nav);
         scroller.setClassName(LumoUtility.Padding.SMALL);
         addToDrawer(scroller);
@@ -41,11 +44,15 @@ public class MainView  extends AppLayout{
 
     }
 
+    private void createVariables(){
+        locale = UI.getCurrent().getLocale();
+        label = ResourceBundle.getBundle(ResourceBundleNames.LABLE_BUNDLE, locale);
+        route = ResourceBundle.getBundle(ResourceBundleNames.ROUTE_BUNDLE, locale);
+    }
+
     private SideNav getSideNav() {
 
         SideNav sideNav = new SideNav();
-
-
 
         sideNav.addItem(
                 new SideNavItem(label.getString(LabelKeys.ALL_VOCABULARY_SIDENAV), route.getString(RouteKeys.ALL_VOCABULARY_ROUTE),
@@ -57,7 +64,7 @@ public class MainView  extends AppLayout{
                 new SideNavItem(label.getString(LabelKeys.CREATE_VOCABULARYLIST_SIDENAV), route.getString(RouteKeys.CREATE_VOCABULARY_LIST_ROUTE),
                         VaadinIcon.HAMMER.create()));
 
-                //TODO SPrache in submenu einfügem
+                //TODO  aktion switch language einfügem
                 //new SideNavItem(label.getString(LabelKeys.SITE_LANGUAGE_SIDENAV), route.getString(RouteKeys.SITE_LANGUAGE_ROUTE),
                 //VaadinIcon.FLAG_O.create()));
                        // VaadinIcon.SMILEY_O.create()));
@@ -66,6 +73,8 @@ public class MainView  extends AppLayout{
                  siteLanguage.addItem(new SideNavItem(label.getString(LabelKeys.GERMAN_SIDENAV)));
                  siteLanguage.addItem(new SideNavItem(label.getString(LabelKeys.ENGLISH_SIDENAV)));
                  sideNav.addItem(siteLanguage);
+
+
 
 
         return sideNav;

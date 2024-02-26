@@ -18,8 +18,6 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import java.util.*;
 
-//TODO wenn bei letzte vokablen wird keine lösung angezeigt und feld bleibt readable
-//todo button beim letzten okabel muss doppelt wenn lösung angeklickt aber zuvor nicht gedrückt werden
 @PageTitle("Vokabeln lernen")
 @Route(value= Constants.TEST_PATH, layout=MainView.class)
 public class TestVocabularyView extends VerticalLayout {
@@ -75,6 +73,8 @@ public class TestVocabularyView extends VerticalLayout {
         testButton.addClickListener(event -> presenter.testVocabulary(translation.getValue()));
         helpButton.addClickListener(event -> presenter.getHelp());
         solutionButton.addClickListener(event -> presenter.showSolution());
+        nextButton.addClickListener(event -> presenter.showNextVocabulary());
+        showResultButton.addClickListener(event -> openTestResult());
         nextButton.setVisible(false);
         showResultButton.setVisible(false);
         return new HorizontalLayout(testButton, helpButton, solutionButton, nextButton, showResultButton);
@@ -105,6 +105,7 @@ public class TestVocabularyView extends VerticalLayout {
 
     public void updateButtonsForNextVocabulary() {
         // Logik zum Aktualisieren der Buttons, wenn die nächste Vokabel angezeigt wird
+        translation.setPlaceholder("");
         nextButton.setVisible(false);
         testButton.setVisible(true);
         solutionButton.setVisible(true);
@@ -112,16 +113,21 @@ public class TestVocabularyView extends VerticalLayout {
         translation.setReadOnly(false);
     }
 
-    public void updateButtonsForSolution() {
+    public void updateButtonsForSolution(boolean lastVocabulary) {
         // Logik zum Aktualisieren der Buttons, wenn die Lösung angezeigt wird
         translation.setPlaceholder("");
         testButton.setVisible(false);
         solutionButton.setVisible(false);
         helpButton.setVisible(false);
         translation.setReadOnly(true);
+        if(lastVocabulary){
+            nextButton.setVisible(false);
+            updateButtonsForFinish();
 
-        nextButton.setVisible(true);
-        nextButton.addClickListener(event -> presenter.showNextVocabulary());
+        }else{
+            nextButton.setVisible(true);
+        }
+
     }
 
     private void updateButtonsForFinish(){
@@ -133,7 +139,7 @@ public class TestVocabularyView extends VerticalLayout {
         showResultButton.setVisible(true);
         translation.setReadOnly(true);
 
-        showResultButton.addClickListener(event -> openTestResult());
+
     }
 
     public void showNoVocabularyFound() {

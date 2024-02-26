@@ -1,20 +1,22 @@
 package com.moc.vocabularywebapp.service.vocabulary;
 
 import com.moc.vocabularywebapp.model.Vocabulary;
+import com.moc.vocabularywebapp.model.VocabularyList;
+import com.moc.vocabularywebapp.repository.VocabularyListRepository;
 import com.moc.vocabularywebapp.repository.VocabularyRepository;
-import com.moc.vocabularywebapp.model.VocabularyStatistic;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//TODO findStatisticId
 @Service
-public class VocabularyServiceImpl implements VocabularyService{
+public class VocabularyServiceImpl implements VocabularyService {
 
     @Autowired
     private VocabularyRepository vocabularyRepository;
+
+    @Autowired
+    private VocabularyListRepository listRepository;
 
     @Override
     public void save(Vocabulary vocabulary) {
@@ -36,14 +38,9 @@ public class VocabularyServiceImpl implements VocabularyService{
         return vocabularyRepository.findTranslation(substring);
     }
 
-    public VocabularyStatistic findStatisticId(Integer id){
-        return vocabularyRepository.findById(id).map(Vocabulary::getVocabularyStatistic).orElseThrow(() -> new EntityNotFoundException("blaaaaa"));
-    }
-
-    @Override
-    public Integer findIdByExpression(String expression) {
-        //return vocabularyRepository.findIdByName(expression);
-        return vocabularyRepository.findIdByExpression(expression);
+    public VocabularyList createVocabularyList(String userId, VocabularyList list) {
+        list.setUserId(userId);
+        return listRepository.save(list);
     }
 
 }

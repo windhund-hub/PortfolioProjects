@@ -19,9 +19,9 @@ import java.util.*;
 @Route(value= Constants.STUDY_PATH, layout=MainView.class)
 public class StudyVocabularyView extends VerticalLayout {
 
-    Locale locale;
-    ResourceBundle label;
-    ResourceBundle route;
+    private Locale locale;
+    private ResourceBundle label;
+    private ResourceBundle route;
     private final VocabularyService vocabularyService;
     private StudyVocabularyPresenter presenter;
     private TextArea expression;

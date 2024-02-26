@@ -1,28 +1,19 @@
 package com.moc.vocabularywebapp.repository;
 
 import com.moc.vocabularywebapp.model.Vocabulary;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface VocabularyRepository extends JpaRepository<Vocabulary, Integer> {
+public interface VocabularyRepository extends MongoRepository<Vocabulary, String> {
 
-    @Query("select v from Vocabulary v where lower(v.expression) like lower(concat('%',:substring,'%' ))")
-    List<Vocabulary> findExpression(String substring);
+    @Query("{ 'expression': { $regex: ?0, $options: 'i' } }")
+    List<Vocabulary> findExpression(String expression);
 
-    @Query("select v from Vocabulary v where lower(v.translation) like lower(concat('%',:substring,'%' ))")
-    List<Vocabulary> findTranslation(String substring);
-
-    //@Query("select v from Vocabulary v where v.expression=:expression")
-    //    Integer findIdByName(String expression);
-    Integer findIdByExpression(String expression);
-
-
-
-
-
+    @Query("{ 'translation': { $regex: ?0, $options: 'i' } }")
+    List<Vocabulary> findTranslation(String translation);
 
 }

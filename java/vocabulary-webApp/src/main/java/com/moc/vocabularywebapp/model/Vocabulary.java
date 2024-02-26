@@ -1,60 +1,56 @@
 package com.moc.vocabularywebapp.model;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-
-@Entity
+@Document(collection = "vocabularies") // Markiert die Klasse als ein Dokument, das in der MongoDB gespeichert wird
+@TypeAlias("Vocabulary")
 public class Vocabulary {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique=true)
-    private Integer id;
+    private String id;
 
-    @Column(unique=true)
     @NotEmpty(message = "Expression muss gesetzt werden.")
     @Pattern(regexp = "^[A-Za-z]+$", message = "Es dürfen nur Buchstaben enthalten sein")
     private String expression;
 
-    @Column(unique=true)
-    @NotEmpty(message = "Translation muss gesetzt werden.")
+    @NotEmpty(message = "Übersetzung muss gesetzt werden.")
     @Pattern(regexp = "^[A-Za-z]+$", message = "Es dürfen nur Buchstaben enthalten sein")
     private String translation;
 
-    @OneToOne
-    @JoinColumn
     private VocabularyStatistic vocabularyStatistic;
 
-    public Vocabulary(String expression, String translation){
-
+    public Vocabulary(String expression, String translation) {
         this.expression = expression;
         this.translation = translation;
-        vocabularyStatistic = new VocabularyStatistic();
+        this.vocabularyStatistic = new VocabularyStatistic();
+    }
+    public Vocabulary(){}
+
+    public String getId() {
+        return id;
     }
 
-    public Vocabulary() {
-
+    public String getExpression() {
+        return expression;
     }
 
-    public Integer getId() {
-        return this.id;
+    public void setExpression(String expression) {
+        this.expression = expression;
     }
 
-    public String getExpression(){
-
-            return this.expression;
+    public String getTranslation() {
+        return translation;
     }
 
-    public String getTranslation(){
-
-        return this.translation;
+    public void setTranslation(String translation) {
+        this.translation = translation;
     }
 
-    public VocabularyStatistic getVocabularyStatistic(){
-
+    public VocabularyStatistic getVocabularyStatistic() {
         return this.vocabularyStatistic;
     }
-
 }

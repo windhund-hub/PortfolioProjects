@@ -1,10 +1,8 @@
 package com.moc.vocabularywebapp.presenter;
 
-import com.moc.vocabularywebapp.model.Vocabulary;
 import com.moc.vocabularywebapp.service.result.ResultService;
 import com.moc.vocabularywebapp.view.TestResultView;
-import java.util.Map;
-
+//TODO
 public class TestResultPresenter {
     private TestResultView view;
     private ResultService resultService;

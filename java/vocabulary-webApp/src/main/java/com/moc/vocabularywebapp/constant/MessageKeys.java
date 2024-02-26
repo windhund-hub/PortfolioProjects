@@ -8,4 +8,5 @@ public class MessageKeys {
     public static final String VOCABULARY_SAVED = "vocabulary.saved";
 
     public static final String NO_VOCABULARY_FOUND = "no.vocabulary.found";
+    public static final String LIST_CREATED = "list.created";
 }
