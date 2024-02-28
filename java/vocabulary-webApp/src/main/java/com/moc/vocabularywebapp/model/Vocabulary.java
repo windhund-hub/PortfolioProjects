@@ -4,9 +4,10 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "vocabularies") // Markiert die Klasse als ein Dokument, das in der MongoDB gespeichert wird
+@Document(collection = "vocabularies")
 @TypeAlias("Vocabulary")
 public class Vocabulary {
 
@@ -54,3 +55,5 @@ public class Vocabulary {
         return this.vocabularyStatistic;
     }
 }
+
+

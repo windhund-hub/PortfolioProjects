@@ -5,21 +5,21 @@ import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
 @Document(collection = "user_vocabularies")
 @TypeAlias("UserVocabularies")
-public class UserVocabulary extends Vocabulary{
+public class UserVocabularyReference extends Vocabulary{
 
 
     private String userId;
     @DBRef
+    private Vocabulary vocabulary;
+    @DBRef
     private UserVocabularyList userVocabularyList;
 
-    public UserVocabulary(String userId, String expression, String translation ){
+    public UserVocabularyReference(String userId, String expression, String translation ){
         super(expression, translation);
         this.userId = userId;
     }
+
+
 }
-
-

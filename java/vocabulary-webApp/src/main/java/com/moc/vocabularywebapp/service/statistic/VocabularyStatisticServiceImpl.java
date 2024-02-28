@@ -13,13 +13,6 @@ public class VocabularyStatisticServiceImpl implements VocabularyStatisticServic
     @Autowired
     private VocabularyRepository vocabularyRepository;
 
-    @Override
-    public void save(VocabularyStatistic vocabularyStatistic, String vocabularyId) {
-        //vocabularyRepositoryMongo.save(vocabularyStatisticMongo);
-        // Da VocabularyStatistic jetzt ein Teil von Vocabulary ist, sollte diese Methode
-        // entsprechend angepasst werden, was bedeutet, dass das Speichern von Statistiken
-        // direkt in Verbindung mit einem Vocabulary-Dokument erfolgt.
-    }
 
     @Override
     public VocabularyStatistic updateStatistic(String vocabularyId, int numberOfTrainings, int numberOfSuccess) {

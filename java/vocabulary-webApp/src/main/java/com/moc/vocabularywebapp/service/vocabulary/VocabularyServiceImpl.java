@@ -1,8 +1,8 @@
 package com.moc.vocabularywebapp.service.vocabulary;
 
+import com.moc.vocabularywebapp.model.UserVocabularyList;
 import com.moc.vocabularywebapp.model.Vocabulary;
-import com.moc.vocabularywebapp.model.VocabularyList;
-import com.moc.vocabularywebapp.repository.VocabularyListRepository;
+import com.moc.vocabularywebapp.repository.UserVocabularyListRepository;
 import com.moc.vocabularywebapp.repository.VocabularyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class VocabularyServiceImpl implements VocabularyService {
     private VocabularyRepository vocabularyRepository;
 
     @Autowired
-    private VocabularyListRepository listRepository;
+    private UserVocabularyListRepository listRepository;
 
     @Override
     public void save(Vocabulary vocabulary) {
@@ -38,9 +38,8 @@ public class VocabularyServiceImpl implements VocabularyService {
         return vocabularyRepository.findTranslation(substring);
     }
 
-    public VocabularyList createVocabularyList(String userId, VocabularyList list) {
-        list.setUserId(userId);
-        return listRepository.save(list);
+    public void createVocabularyList(UserVocabularyList list) {
+        listRepository.save(list);
     }
 
 }

@@ -1,9 +1,12 @@
 package com.moc.vocabularywebapp.service.vocabulary;
 
+import com.moc.vocabularywebapp.model.UserVocabularyList;
 import com.moc.vocabularywebapp.model.Vocabulary;
-import com.moc.vocabularywebapp.model.VocabularyList;
+import com.moc.vocabularywebapp.model.UserVocabulary;
 
 import java.util.List;
+
+//TODO TESt schreiben
 
 public interface VocabularyService {
 
@@ -12,5 +15,5 @@ public interface VocabularyService {
     List<Vocabulary> findAll();
     List<Vocabulary> findExpression(String substring);
     List<Vocabulary> findTranslation(String substring);
-    VocabularyList createVocabularyList(String userId, VocabularyList list);
+    void createVocabularyList(UserVocabularyList list);
 }

@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import static org.assertj.core.api.Assertions.assertThat;
 import java.util.List;
-
-import org.springframework.data.annotation.TypeAlias;
 import org.springframework.test.context.ActiveProfiles;
 
 @DataMongoTest

@@ -1,18 +1,22 @@
 package com.moc.vocabularywebapp.view;
 
 
-import com.moc.vocabularywebapp.constant.Constants;
-import com.moc.vocabularywebapp.constant.LabelKeys;
-import com.moc.vocabularywebapp.constant.ResourceBundleNames;
-import com.moc.vocabularywebapp.constant.RouteKeys;
+import com.moc.vocabularywebapp.constant.*;
+import com.moc.vocabularywebapp.model.UserVocabulary;
+import com.moc.vocabularywebapp.model.UserVocabularyList;
 import com.moc.vocabularywebapp.presenter.CreateVocabularyListPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.data.binder.BeanValidationBinder;
+import com.vaadin.flow.data.binder.Binder;
+import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
@@ -32,6 +36,7 @@ public class CreateVocabularyUserListView extends VerticalLayout {
     private Button createListButton;
     private Button addVocabularyButton;
     private TextField listNameTextField;
+    private Binder<UserVocabularyList> binder;
 
 
     public CreateVocabularyUserListView(VocabularyService vocabularyService) {
@@ -65,5 +70,23 @@ public class CreateVocabularyUserListView extends VerticalLayout {
 
     private void addVocabulary() {
         //getUI().ifPresent(ui -> UI.getCurrent().navigate(route.getString(RouteKeys.ADD_VOCABULARY_ROUTE)));
+    }
+
+    public void createBinder(UserVocabularyList userVocabularyList) {
+        try {
+            binder = new BeanValidationBinder<>(UserVocabularyList.class);
+            binder.writeBean(userVocabularyList);
+        }catch(ValidationException e){ e.printStackTrace();}
+    }
+
+    public String setListNameFromTF(){
+        return listNameTextField.getValue();
+    }
+
+    public void showListCreated(){
+        Notification listCreated = Notification.
+                show(message.getString(MessageKeys.LIST_CREATED));
+        listCreated.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
+        listCreated.setPosition(Notification.Position.TOP_START);
     }
 }
