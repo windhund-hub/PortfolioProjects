@@ -24,6 +24,10 @@ public class LabelKeys {
     public static final String HELP_BUTTON = "help.button";
     public static final String SOLUTION_BUTTON = "solution.button";
     public static final String SHOW_RESULTS_BUTTON = "show.results.button";
+    public static final String ADD_DB_VOCABULARY_BUTTON = "add.db.vocabulary.button";
+    public static final String CREATE_LIST_BUTTON = "create.vocabulary.list.button" ;
+
+
 
     //Header
     public static final String EXPRESSION_TABLE_HEADER = "expression.table.header";
@@ -47,8 +51,5 @@ public class LabelKeys {
     public static final String WRONG_ANSWER = "wrong.answer";
     public static final String EMPTY_FIELD = "empty.field";
     public static final String DOT = "dot";
-
-
-    public static final String CREATE_LIST_BUTTON = "create.vocabulary.list.button" ;
     public static final String LISTNAME = "vocabulary.list.name";
 }

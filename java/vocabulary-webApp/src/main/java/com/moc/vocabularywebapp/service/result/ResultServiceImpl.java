@@ -14,12 +14,11 @@ public class ResultServiceImpl implements ResultService{
         results = new LinkedHashMap<>();
     }
 
-    @Override
+
     public void setResult(Vocabulary vocabulary, String result) {
         results.put(vocabulary,result);
     }
 
-    @Override
     public Map<Vocabulary, String> getResults() {
         return results;
     }

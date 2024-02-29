@@ -1,7 +1,10 @@
 package com.moc.vocabularywebapp.view;
 
 import com.moc.vocabularywebapp.constant.*;
+import com.moc.vocabularywebapp.model.UserVocabulary;
 import com.moc.vocabularywebapp.model.Vocabulary;
+import com.moc.vocabularywebapp.presenter.AddVocabularyPresenter;
+import com.moc.vocabularywebapp.presenter.CreateVocabularyListPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasValue;
@@ -22,6 +25,7 @@ import com.vaadin.flow.router.Route;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.function.Consumer;
 
 
 //TODO
@@ -34,12 +38,12 @@ public class AddVocabularyView extends VerticalLayout {
     private ResourceBundle route;
     private ResourceBundle message;
     private VocabularyService vocabularyService;
-    private TextField word;
+    private AddVocabularyPresenter presenter;
+    private TextField expression;
     private TextField translation;
     private Button saveButton;
     private Button closeButton;
-    private Binder<Vocabulary> binder;
-    private Vocabulary vocabulary;
+    private Binder<UserVocabulary> binder;
 
     public AddVocabularyView(VocabularyService vocabularyService){
         this.vocabularyService = vocabularyService;
@@ -49,51 +53,23 @@ public class AddVocabularyView extends VerticalLayout {
         this.message = ResourceBundle.getBundle(ResourceBundleNames.MESSAGE_BUNDLE, locale);
         setAlignItems(Alignment.CENTER);
         createVariables();
-        createBinder();
+        this.presenter = new AddVocabularyPresenter(this, vocabularyService);
         add(createFormLayout());
     }
 
     private void createVariables() {
-        word = new TextField(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
+        expression = new TextField(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
         translation = new TextField(label.getString(LabelKeys.TRANSLATION_TABLE_HEADER));
         saveButton = new Button(label.getString(LabelKeys.SAVE_BUTTON));
         closeButton = new Button(label.getString(LabelKeys.CLOSE_BUTTON));
 
     }
 
-    private void createBinder() {
-        vocabulary = new Vocabulary();
-        binder = new BeanValidationBinder<>(Vocabulary.class);
-        binder.bindInstanceFields(this);
-    }
-    /*private void createBinder() {
-        testKlasse = new TestKlasse();//
-        vStatistic = new VStatistic(0,0, testKlasse );
-        binderTestklasse = new BeanValidationBinder<>(TestKlasse.class);//
-        binder = new BeanValidationBinder<>(VStatistic.class);
-        //binder.bindInstanceFields(this);
-    }
-    private void saveStatistic() {
-        try {
-            //binder.isValid();
-            binderTestklasse.writeBean(testKlasse);//
-            testKlasseService.save(testKlasse);//
-            binder.writeBean(vStatistic);
-            vocabularyStatisticService.save(vStatistic);
-            Notification notification = Notification.
-                    show("Statistic saved successfully...");
-            notification.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
-            notification.setPosition(Notification.Position.TOP_CENTER);
-        } catch (ValidationException e) {
-            e.printStackTrace();
-        }
-    }*/
-
     private Component createButtons() {
         saveButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         closeButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY);
 
-        saveButton.addClickListener(event -> saveVocabulary());
+        saveButton.addClickListener(event -> presenter.saveVocabulary());
 
         closeButton.addClickListener(event -> closeView());
 
@@ -101,21 +77,37 @@ public class AddVocabularyView extends VerticalLayout {
 
     }
 
-    private void saveVocabulary() {
+    private Component createFormLayout() {
+        FormLayout formLayout = new FormLayout();
+        expression.setReadOnly(false);
+        translation.setReadOnly(false);
+        formLayout.add(expression,translation, createButtons());
+        return formLayout;
+
+    }
+
+    public void createBinder(UserVocabulary userVocabulary) {
         try {
-            binder.writeBean(vocabulary);
-            vocabularyService.save(vocabulary);
-            clearFields();
+            binder = new BeanValidationBinder<>(UserVocabulary.class);
+            binder.writeBean(userVocabulary);
             Notification notification = Notification.show(message.getString(MessageKeys.VOCABULARY_SAVED));
             notification.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
             notification.setPosition(Notification.Position.TOP_CENTER);
-        } catch (ValidationException e) {
-            e.printStackTrace();
-        }
+
+        }catch(ValidationException e){ e.printStackTrace();}
     }
-    private void clearFields() {
-        vocabulary = new Vocabulary();
-        binder.getFields().forEach(HasValue::clear);
+
+    public String getExpressionTF(){
+        return expression.getValue();
+    }
+
+    public String getTranslationTF(){
+        return translation.getValue();
+    }
+
+    public void clearFields() {
+        expression.clear();
+        translation.clear();
     }
 
     private void closeView() {
@@ -123,12 +115,5 @@ public class AddVocabularyView extends VerticalLayout {
         getUI().ifPresent(ui -> ui.navigate(route.getString(RouteKeys.ALL_VOCABULARY_ROUTE)));
     }
 
-    private Component createFormLayout() {
-        FormLayout formLayout = new FormLayout();
-        word.setReadOnly(false);
-        translation.setReadOnly(false);
-        formLayout.add(word,translation,createButtons());
-        return formLayout;
 
-    }
 }

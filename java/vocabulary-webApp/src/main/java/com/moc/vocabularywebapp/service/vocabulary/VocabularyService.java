@@ -1,6 +1,7 @@
 package com.moc.vocabularywebapp.service.vocabulary;
 
 import com.moc.vocabularywebapp.model.UserVocabularyList;
+import com.moc.vocabularywebapp.model.UserVocabularyReference;
 import com.moc.vocabularywebapp.model.Vocabulary;
 import com.moc.vocabularywebapp.model.UserVocabulary;
 
@@ -16,4 +17,8 @@ public interface VocabularyService {
     List<Vocabulary> findExpression(String substring);
     List<Vocabulary> findTranslation(String substring);
     void createVocabularyList(UserVocabularyList list);
+    void setVocabularyList(UserVocabularyList list);
+    UserVocabularyList getVocabularyList();
+    void addVocabularyToUserList(UserVocabulary userVocabulary);
+    void saveSelectedVocabularyToUserList(String useriD, UserVocabularyList userVocabularyList, Vocabulary vocabulary);
 }

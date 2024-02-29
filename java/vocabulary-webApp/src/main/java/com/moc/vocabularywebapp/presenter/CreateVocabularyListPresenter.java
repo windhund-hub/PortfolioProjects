@@ -16,7 +16,6 @@ public class CreateVocabularyListPresenter {
     private ResourceBundle message;
     private final CreateVocabularyUserListView view;
     private final VocabularyService vocabularyService;
-
     private UserVocabularyList userVocabularyList;
 
 
@@ -32,7 +31,7 @@ public class CreateVocabularyListPresenter {
                 view.setListNameFromTF());
         view.createBinder(userVocabularyList);
         vocabularyService.createVocabularyList(userVocabularyList);
-
+        vocabularyService.setVocabularyList(userVocabularyList);
         view.showListCreated();
         view.setButtonsForAddVocabulary();
     }

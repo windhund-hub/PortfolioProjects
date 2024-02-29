@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "user_vocabularies")
 @TypeAlias("UserVocabularies")
-public class UserVocabularyReference extends Vocabulary{
+public class UserVocabularyReference{
 
 
     private String userId;
@@ -16,10 +16,10 @@ public class UserVocabularyReference extends Vocabulary{
     @DBRef
     private UserVocabularyList userVocabularyList;
 
-    public UserVocabularyReference(String userId, String expression, String translation ){
-        super(expression, translation);
+    public UserVocabularyReference(String userId, UserVocabularyList userVocabularyList, Vocabulary vocabulary){
         this.userId = userId;
+        this.userVocabularyList = userVocabularyList;
+        this.vocabulary = vocabulary;
     }
-
 
 }

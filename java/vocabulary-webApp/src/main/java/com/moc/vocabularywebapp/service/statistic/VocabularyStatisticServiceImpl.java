@@ -14,7 +14,6 @@ public class VocabularyStatisticServiceImpl implements VocabularyStatisticServic
     private VocabularyRepository vocabularyRepository;
 
 
-    @Override
     public VocabularyStatistic updateStatistic(String vocabularyId, int numberOfTrainings, int numberOfSuccess) {
         Vocabulary vocabulary = vocabularyRepository.findById(vocabularyId)
                 .orElseThrow(() -> new RuntimeException("Vokabel nicht gefunden!"));

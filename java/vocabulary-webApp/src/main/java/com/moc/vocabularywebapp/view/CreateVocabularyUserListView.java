@@ -35,6 +35,7 @@ public class CreateVocabularyUserListView extends VerticalLayout {
     private final VocabularyService vocabularyService;
     private Button createListButton;
     private Button addVocabularyButton;
+    private Button addDBVocabularyButton;
     private TextField listNameTextField;
     private Binder<UserVocabularyList> binder;
 
@@ -53,23 +54,33 @@ public class CreateVocabularyUserListView extends VerticalLayout {
     private void createVariables() {
         createListButton = new Button(label.getString(LabelKeys.CREATE_LIST_BUTTON));
         addVocabularyButton = new Button(label.getString(LabelKeys.ADD_VOCABULARY_BUTTON));
+        addDBVocabularyButton = new Button(label.getString(LabelKeys.ADD_DB_VOCABULARY_BUTTON));
         listNameTextField = new TextField(label.getString(LabelKeys.LISTNAME));
     }
 
     private Component configureButtons() {
         createListButton.addClickListener(event -> presenter.saveList());
         addVocabularyButton.addClickListener(event -> addVocabulary());
+        addDBVocabularyButton.addClickListener(event -> addDBVocabulary());
         addVocabularyButton.setEnabled(false);
-        return new HorizontalLayout(createListButton, addVocabularyButton);
+        addDBVocabularyButton.setEnabled(false);
+        return new HorizontalLayout(createListButton, addVocabularyButton, addDBVocabularyButton);
     }
+
 
     public void setButtonsForAddVocabulary(){
         createListButton.setEnabled(false);
         addVocabularyButton.setEnabled(true);
+        addDBVocabularyButton.setEnabled(true);
     }
 
+    //listenname übergeben
     private void addVocabulary() {
-        //getUI().ifPresent(ui -> UI.getCurrent().navigate(route.getString(RouteKeys.ADD_VOCABULARY_ROUTE)));
+        getUI().ifPresent(ui -> UI.getCurrent().navigate(route.getString(RouteKeys.ADD_VOCABULARY_ROUTE)));
+    }
+
+    private void addDBVocabulary() {
+        getUI().ifPresent(ui -> UI.getCurrent().navigate(route.getString(RouteKeys.ADD_DB_VOCABULARY_ROUTE)));
     }
 
     public void createBinder(UserVocabularyList userVocabularyList) {
