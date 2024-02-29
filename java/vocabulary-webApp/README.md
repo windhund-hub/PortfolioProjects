@@ -1,1 +1,2 @@
-todo: tests
+
+todo: tests, picture, functionality
