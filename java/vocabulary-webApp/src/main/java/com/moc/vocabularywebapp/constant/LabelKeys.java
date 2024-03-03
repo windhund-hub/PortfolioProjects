@@ -52,4 +52,5 @@ public class LabelKeys {
     public static final String EMPTY_FIELD = "empty.field";
     public static final String DOT = "dot";
     public static final String LISTNAME = "vocabulary.list.name";
+    public static final String USER_LIST_SIDENAV = "user.lists.sidenav";
 }

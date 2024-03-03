@@ -62,6 +62,10 @@ public class VocabularyServiceImpl implements VocabularyService {
         return this.currentList;
     }
 
+    public List<UserVocabularyList> getLists(String userId){
+        return listRepository.findAll();
+    }
+
     public void addVocabularyToUserList(UserVocabulary userVocabulary) {
         userVocabularyRepository.save(userVocabulary);
     }

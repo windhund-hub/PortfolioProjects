@@ -3,6 +3,8 @@ package com.moc.vocabularywebapp.view;
 import com.moc.vocabularywebapp.constant.*;
 import com.moc.vocabularywebapp.model.UserVocabularyReference;
 import com.moc.vocabularywebapp.model.Vocabulary;
+import com.moc.vocabularywebapp.presenter.AddDBVocabularyPresenter;
+import com.moc.vocabularywebapp.presenter.AllVocabularyPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
@@ -19,6 +21,7 @@ import com.vaadin.flow.data.selection.SelectionListener;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Set;
@@ -27,13 +30,13 @@ import java.util.Set;
 @Route(value = Constants.ADD_DB_VOCABULARY_ROUTE, layout=MainView.class)
 public class AddDBVocabularyView extends VerticalLayout implements SelectionListener<Grid<Vocabulary>,Vocabulary> {
 
-
     private Locale locale;
     private ResourceBundle label;
     private ResourceBundle route;
     private ResourceBundle message;
     private Grid<Vocabulary> grid;
     private final VocabularyService vocabularyService;
+    private final AddDBVocabularyPresenter presenter;
     private Button save;
     private Button cancel;
     private Set<Vocabulary> selected;
@@ -48,17 +51,21 @@ public class AddDBVocabularyView extends VerticalLayout implements SelectionList
         setAlignItems(FlexComponent.Alignment.CENTER);
         createVariables();
         configureGrid();
+        this.presenter = new AddDBVocabularyPresenter(this, vocabularyService);
         add(grid, createButton());
-        loadVocabulary();
     }
 
     private void createVariables() {
-
-        this.grid = new Grid<>(Vocabulary.class);
+        this.grid = new Grid<>();
         this.save = new Button(label.getString(LabelKeys.SAVE_BUTTON));
         this.cancel = new Button(label.getString(LabelKeys.CLOSE_BUTTON));
     }
 
+    public void updateGrid(List<Vocabulary> vocabularies) {
+        grid.setItems(vocabularies);
+        grid.setSelectionMode(Grid.SelectionMode.MULTI);
+        grid.addSelectionListener(this);
+    }
     private void configureGrid() {
         grid.setSizeFull();
         grid.addColumn(Vocabulary::getExpression).setHeader(label.getString(LabelKeys.EXPRESSION_TABLE_HEADER));
@@ -77,29 +84,23 @@ public class AddDBVocabularyView extends VerticalLayout implements SelectionList
         return new HorizontalLayout(save, cancel);
     }
 
-    private void closeView() {
+    public void closeView() {
         getUI().ifPresent(ui -> ui.navigate(route.getString(RouteKeys.ALL_VOCABULARY_ROUTE)));
     }
 
-    private void loadVocabulary() {
-        grid.setItems(vocabularyService.findAll());
-        grid.setSelectionMode(Grid.SelectionMode.MULTI);
-        grid.addSelectionListener(this);
+    private void saveSelected() {
+        presenter.saveSelectedVocabularies("123", vocabularyService.getVocabularyList());
     }
 
-    private void saveSelected() {
-        selected.forEach(vocabulary ->
-                vocabularyService.saveSelectedVocabularyToUserList("123", vocabularyService.getVocabularyList(), vocabulary));
+    public void showNotification() {
         Notification notification = Notification.show(message.getString(MessageKeys.VOCABULARY_SAVED));
         notification.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
         notification.setPosition(Notification.Position.TOP_CENTER);
-        grid.setItems(vocabularyService.findAll());
     }
+
     @Override
-    public void selectionChange(SelectionEvent<Grid<Vocabulary>,Vocabulary>selectionEvent) {
-        this.selected = selectionEvent.getAllSelectedItems();
+    public void selectionChange(SelectionEvent<Grid<Vocabulary>, Vocabulary> event) {
+        presenter.selectionChanged(event.getAllSelectedItems());
     }
-
-
 
 }

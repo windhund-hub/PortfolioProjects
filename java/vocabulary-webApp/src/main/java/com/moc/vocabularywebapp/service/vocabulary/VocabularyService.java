@@ -21,4 +21,5 @@ public interface VocabularyService {
     UserVocabularyList getVocabularyList();
     void addVocabularyToUserList(UserVocabulary userVocabulary);
     void saveSelectedVocabularyToUserList(String useriD, UserVocabularyList userVocabularyList, Vocabulary vocabulary);
+    List<UserVocabularyList> getLists(String userId);
 }
