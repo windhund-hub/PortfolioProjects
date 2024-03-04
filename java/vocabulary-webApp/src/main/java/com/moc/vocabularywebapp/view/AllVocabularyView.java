@@ -21,6 +21,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 import java.util.List;
 import java.util.Locale;
@@ -30,6 +31,7 @@ import java.util.ResourceBundle;
 //Sprachspalte einfügen, action für Sprachbutton
 @PageTitle("Alle Vokabeln")
 @Route(value= Constants.ALL_VOCABULARY_PATH, layout=MainView.class)
+@AnonymousAllowed
 public class AllVocabularyView extends VerticalLayout {
 
     private Locale locale;

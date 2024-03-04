@@ -13,10 +13,13 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextArea;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
+
 import java.util.*;
 
 @PageTitle("Vokabeln lernen")
 @Route(value= Constants.STUDY_PATH, layout=MainView.class)
+@AnonymousAllowed
 public class StudyVocabularyView extends VerticalLayout {
 
     private Locale locale;

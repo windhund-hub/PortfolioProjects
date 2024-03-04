@@ -17,9 +17,11 @@ import java.util.*;
 import com.moc.vocabularywebapp.constant.LabelKeys;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @PageTitle("Testresultat")
 @Route(value= Constants.RESULT_PATH, layout=MainView.class)
+@AnonymousAllowed
 public class TestResultView extends VerticalLayout {
 
     private TestResultPresenter presenter;
