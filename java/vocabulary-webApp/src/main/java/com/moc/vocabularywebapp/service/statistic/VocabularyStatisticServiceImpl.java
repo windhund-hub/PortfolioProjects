@@ -6,7 +6,6 @@ import com.moc.vocabularywebapp.repository.VocabularyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-//TODO
 @Service
 public class VocabularyStatisticServiceImpl implements VocabularyStatisticService {
 

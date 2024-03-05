@@ -9,5 +9,6 @@ public class Constants {
     public static final String CREATE_VOCABULARY_LIST = "/vokabelliste-erstellen";
     public static final String ADD_VOCABULARY_ROUTE = "/vokabeln-hinzufügen";
     public static final String ADD_DB_VOCABULARY_ROUTE = "/vokabeln-aus-db-hinzufügen";
-
+    public static final String LOGIN_PATH = "/anmelden";
+    public static final String SIGNUP_PATH = "/registrieren";
 }

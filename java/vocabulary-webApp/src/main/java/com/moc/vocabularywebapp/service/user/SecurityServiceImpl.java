@@ -1,5 +1,8 @@
 package com.moc.vocabularywebapp.service.user;
 
+import com.moc.vocabularywebapp.constant.MessageKeys;
+import com.moc.vocabularywebapp.constant.ResourceBundleNames;
+import com.moc.vocabularywebapp.constant.RouteKeys;
 import com.moc.vocabularywebapp.model.User;
 import com.moc.vocabularywebapp.repository.SecurityRepository;
 import com.vaadin.flow.component.UI;
@@ -13,22 +16,28 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
 
-//TODO Strings
 @Service
 public class SecurityServiceImpl implements SecurityService, UserDetailsService {
 
     private final SecurityRepository securityRepository;
     private final BCryptPasswordEncoder encoder;
+    private Locale locale;
+    private ResourceBundle route;
+    private ResourceBundle message;
 
     @Autowired
     public SecurityServiceImpl(SecurityRepository securityRepository, BCryptPasswordEncoder encoder) {
         this.securityRepository = securityRepository;
         this.encoder = encoder;
+        this.locale = UI.getCurrent().getLocale();
+        this.route = ResourceBundle.getBundle(ResourceBundleNames.ROUTE_BUNDLE, locale);
+        this.message = ResourceBundle.getBundle(ResourceBundleNames.MESSAGE_BUNDLE, locale);
     }
 
     @Override
@@ -41,7 +50,7 @@ public class SecurityServiceImpl implements SecurityService, UserDetailsService 
 
     @Override
     public void logout() {
-        UI.getCurrent().getPage().setLocation("/login");
+        UI.getCurrent().getPage().setLocation(route.getString(RouteKeys.LOGIN_ROUTE));
         SecurityContextLogoutHandler logoutHandler = new SecurityContextLogoutHandler();
         logoutHandler.logout(VaadinServletRequest.getCurrent().getHttpServletRequest(), null, null);
 
@@ -51,7 +60,7 @@ public class SecurityServiceImpl implements SecurityService, UserDetailsService 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = securityRepository.findByUsername(username);
         if (user == null) {
-            throw new UsernameNotFoundException("Benutzer nicht gefunden: " + username);
+            throw new UsernameNotFoundException(message.getString(MessageKeys.USERNAME_NOT_FOUND) + username);
         }
         List<GrantedAuthority> authorities = user.getRoles().stream()
                 .map(role -> new SimpleGrantedAuthority(role))

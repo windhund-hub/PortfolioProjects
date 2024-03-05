@@ -22,12 +22,10 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.Lumo;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-//TODO _> LAnguage, eigene VoakbelListe mit eignen Vokabelen
 @PageTitle(value = "Home")
 @Route(value = "")
 public class MainView  extends AppLayout{

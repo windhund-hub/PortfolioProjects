@@ -1,7 +1,6 @@
 package com.moc.vocabularywebapp.service.result;
 
 import com.moc.vocabularywebapp.model.Vocabulary;
-
 import java.util.Map;
 
 public interface ResultService {

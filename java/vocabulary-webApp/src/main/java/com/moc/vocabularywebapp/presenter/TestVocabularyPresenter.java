@@ -7,10 +7,7 @@ import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.moc.vocabularywebapp.view.TestVocabularyView;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.stream.Stream;
 
-
-//TODO update stats
 public class TestVocabularyPresenter {
 
     private final TestVocabularyView view;

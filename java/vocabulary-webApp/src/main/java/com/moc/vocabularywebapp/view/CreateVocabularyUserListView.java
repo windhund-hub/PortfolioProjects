@@ -1,8 +1,6 @@
 package com.moc.vocabularywebapp.view;
 
-
 import com.moc.vocabularywebapp.constant.*;
-import com.moc.vocabularywebapp.model.UserVocabulary;
 import com.moc.vocabularywebapp.model.UserVocabularyList;
 import com.moc.vocabularywebapp.presenter.CreateVocabularyListPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
@@ -19,7 +17,6 @@ import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 

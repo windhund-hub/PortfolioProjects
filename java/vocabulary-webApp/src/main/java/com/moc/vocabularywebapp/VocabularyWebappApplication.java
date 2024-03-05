@@ -15,5 +15,4 @@ public class VocabularyWebappApplication implements AppShellConfigurator {
 
         SpringApplication.run(VocabularyWebappApplication.class, args);
     }
-
 }

@@ -10,4 +10,7 @@ public class RouteKeys {
     public static final String CREATE_VOCABULARY_LIST_ROUTE = "create.vocabulary.list";
     public static final String SITE_LANGUAGE_ROUTE = "change.site.language";
     public static final String ADD_DB_VOCABULARY_ROUTE = "add.db.vocabulary.route";
+    public static final String LOGIN_ROUTE = "login.route";
+    public static final String IMAGES = "images.route";
+    public static final String SIGNUP_ROUTE = "signup.route";
 }

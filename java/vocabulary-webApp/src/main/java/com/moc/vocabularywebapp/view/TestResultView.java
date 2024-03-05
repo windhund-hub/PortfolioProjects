@@ -84,7 +84,5 @@ public class TestResultView extends VerticalLayout {
         //testAgainButton.addClickListener(event -> getUI().ifPresent(ui -> ui.navigate(Constants.TEST_PATH)));
 
     }
-
-
 }
 

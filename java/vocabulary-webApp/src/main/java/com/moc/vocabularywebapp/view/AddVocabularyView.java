@@ -2,12 +2,9 @@ package com.moc.vocabularywebapp.view;
 
 import com.moc.vocabularywebapp.constant.*;
 import com.moc.vocabularywebapp.model.UserVocabulary;
-import com.moc.vocabularywebapp.model.Vocabulary;
 import com.moc.vocabularywebapp.presenter.AddVocabularyPresenter;
-import com.moc.vocabularywebapp.presenter.CreateVocabularyListPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.HasValue;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
@@ -22,13 +19,10 @@ import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.function.Consumer;
 
 
-//TODO
 @PageTitle("Vokabel hinzufügen")
 @Route(value = Constants.ADD_VOCABULARY_ROUTE, layout=MainView.class)
 public class AddVocabularyView extends VerticalLayout {
@@ -114,6 +108,4 @@ public class AddVocabularyView extends VerticalLayout {
 
         getUI().ifPresent(ui -> ui.navigate(route.getString(RouteKeys.ALL_VOCABULARY_ROUTE)));
     }
-
-
 }

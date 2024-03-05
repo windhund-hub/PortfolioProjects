@@ -2,7 +2,7 @@ package com.moc.vocabularywebapp.presenter;
 
 import com.moc.vocabularywebapp.service.result.ResultService;
 import com.moc.vocabularywebapp.view.TestResultView;
-//TODO
+
 public class TestResultPresenter {
     private TestResultView view;
     private ResultService resultService;

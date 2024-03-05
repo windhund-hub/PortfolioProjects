@@ -10,7 +10,6 @@ import com.moc.vocabularywebapp.repository.UserVocabularyRepository;
 import com.moc.vocabularywebapp.repository.VocabularyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -76,6 +75,4 @@ public class VocabularyServiceImpl implements VocabularyService {
 
         userDBVocabularyRepository.save(userVocabularyReference);
     }
-
-
 }

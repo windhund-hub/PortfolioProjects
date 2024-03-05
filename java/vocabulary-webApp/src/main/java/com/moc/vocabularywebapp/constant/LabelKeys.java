@@ -53,4 +53,10 @@ public class LabelKeys {
     public static final String DOT = "dot";
     public static final String LISTNAME = "vocabulary.list.name";
     public static final String USER_LIST_SIDENAV = "user.lists.sidenav";
+    public static final String SIGNUP_TITLE = "signup.title";
+    public static final String USERNAME = "username";
+    public static final String PASSWORD = "password";
+    public static final String PASSWORD_AGAIN = "password.again";
+    public static final String SIGNUP_BUTTON = "signup.button";
+    public static final String LOGIN_TITLE = "login.title";
 }

@@ -1,10 +1,8 @@
 package com.moc.vocabularywebapp.view;
 
 import com.moc.vocabularywebapp.constant.*;
-import com.moc.vocabularywebapp.model.UserVocabularyReference;
 import com.moc.vocabularywebapp.model.Vocabulary;
 import com.moc.vocabularywebapp.presenter.AddDBVocabularyPresenter;
-import com.moc.vocabularywebapp.presenter.AllVocabularyPresenter;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
@@ -20,7 +18,6 @@ import com.vaadin.flow.data.selection.SelectionEvent;
 import com.vaadin.flow.data.selection.SelectionListener;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;

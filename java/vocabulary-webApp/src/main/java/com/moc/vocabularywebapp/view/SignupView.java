@@ -1,10 +1,11 @@
 package com.moc.vocabularywebapp.view;
 
-import com.moc.vocabularywebapp.constant.Constants;
+
 import com.moc.vocabularywebapp.constant.LabelKeys;
 import com.moc.vocabularywebapp.constant.ResourceBundleNames;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.html.H1;
+import com.moc.vocabularywebapp.constant.Constants;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -12,16 +13,16 @@ import com.vaadin.flow.server.auth.AnonymousAllowed;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-@PageTitle("Login")
-@Route(value = Constants.LOGIN_PATH, layout=MainView.class)
+
+@PageTitle("Signup")
+@Route(value = Constants.SIGNUP_PATH, layout=MainView.class)
 @AnonymousAllowed
-public class LoginView extends VerticalLayout {
+public class SignupView extends VerticalLayout {
 
     private Locale locale;
     private ResourceBundle label;
 
-
-    public LoginView(LoginViewFactory loginViewFactory){
+    public SignupView(SignupViewFactory signupFactory) {
         this.locale = UI.getCurrent().getLocale();
         this.label = ResourceBundle.getBundle(ResourceBundleNames.LABLE_BUNDLE, locale);
         setSizeFull();
@@ -29,8 +30,6 @@ public class LoginView extends VerticalLayout {
         setJustifyContentMode(JustifyContentMode.CENTER);
 
 
-        add(new H1(label.getString(LabelKeys.APP_TITLE)),loginViewFactory.create());
+        add(new H1(label.getString(LabelKeys.APP_TITLE)), signupFactory.create());
     }
 }
-
-

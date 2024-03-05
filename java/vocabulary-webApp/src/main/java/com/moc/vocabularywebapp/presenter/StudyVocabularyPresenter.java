@@ -3,7 +3,6 @@ package com.moc.vocabularywebapp.presenter;
 import com.moc.vocabularywebapp.model.Vocabulary;
 import com.moc.vocabularywebapp.service.vocabulary.VocabularyService;
 import com.moc.vocabularywebapp.view.StudyVocabularyView;
-
 import java.util.List;
 import java.util.ListIterator;
 

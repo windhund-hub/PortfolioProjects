@@ -22,7 +22,6 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
-
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
